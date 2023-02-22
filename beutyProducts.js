@@ -19,7 +19,7 @@ event.preventDefault();
         rated:form.rated.value,
         rating:form.rating.value
         },
-        sutability:form.suitability.value
+        sutability:form.suitable.value
     }
 
     console.log(obj);

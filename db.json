@@ -270,37 +270,622 @@
       "id": 5
     }
   ],
-  "beautyProducts":[
+  "beautyProducts": [
     {
-       "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/AD/JF/FM/7304076/vitamincdayandnightcombo-500x500.jpg",
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/AD/JF/FM/7304076/vitamincdayandnightcombo-500x500.jpg",
       "name": "Mamaearth Vitamin C Day And Night Combo",
       "brandName": "Mamaearth",
       "totalPrice": "1198",
       "discount": "25",
       "shipping": "2",
-      "quantity":"2*200 ml",
+      "quantity": "2*200 ml",
       "rating": {
         "rated": "40",
         "rating": "5"
       },
-      "sutaibility":"All skin type",
+      "sutaibility": "All skin type",
       "id": 1
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/NY/YA/UB/24103511/psc951foramazon-1000x1000.jpg",
+      "name": "Breeze Body Mist Infused With Strong Smell To Feel Freshness All Day (100ml)",
+      "brandName": "Pocket Inc",
+      "totalPrice": "179",
+      "discount": "5",
+      "shipping": "3",
+      "quantity": "1",
+      "rating": {
+        "rated": "20",
+        "rating": "4"
+      },
+      "sutability": "All skin types",
+      "id": 2
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/AK/QD/DB/13078142/1669634638143-1s-1shs-originnm80prcnt-1000x1000.webp",
+      "name": "Oir Sugarcane Scalp Conditioning Shampoo 200ml Sugarcane Handmade Soap 75gm Pack",
+      "brandName": " Store Apt",
+      "totalPrice": "392",
+      "discount": "2",
+      "shipping": "3",
+      "quantity": "1",
+      "rating": {
+        "rated": "20",
+        "rating": "4"
+      },
+      "sutability": "All skin types",
+      "id": 3
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/11/VZ/QH/QB/76439700/f1-aloe-vera-ubtan-o-1-1050-by-1050-1000x1000.jpg",
+      "name": "Aloe Vera Ubtan Face Wash (100ml)",
+      "brandName": "Dh Care Products",
+      "totalPrice": "99",
+      "discount": "2",
+      "shipping": "2",
+      "quantity": "1",
+      "rating": {
+        "rated": "30",
+        "rating": "4"
+      },
+      "sutability": "All skin types",
+      "id": 4
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/11/NT/XW/PN/84083524/cropped2301010345123646105-1000x1000.jpg",
+      "name": "Kapiva Alevora Gel 250g",
+      "brandName": "Jeevaa Organics",
+      "totalPrice": "125",
+      "discount": "5",
+      "shipping": "2",
+      "quantity": "2",
+      "rating": {
+        "rated": "25",
+        "rating": "3"
+      },
+      "sutability": "All skin types",
+      "id": 5
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/YX/SZ/KB/115773359/5502309630-1000x1000.jpg",
+      "name": "Sunisa 3 In 1 Air Cushion Waterproof Foundation Cc Cream",
+      "brandName": "M/s New Fly Group & Co.",
+      "totalPrice": "550",
+      "discount": "5",
+      "shipping": "4",
+      "quantity": "3",
+      "rating": {
+        "rated": "40",
+        "rating": "4"
+      },
+      "sutability": "girls",
+      "id": 6
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/BL/YE/SF/81195827/niveasoft-fragrance-oilsoluble-1kg-1000x1000.jpg",
+      "name": "Nivea Soft - Fragrance ( Oil Soluble )",
+      "brandName": "Bizpressions",
+      "totalPrice": "2410",
+      "discount": "5",
+      "shipping": "3",
+      "quantity": "3",
+      "rating": {
+        "rated": "42",
+        "rating": "4"
+      },
+      "sutability": "Man",
+      "id": 7
+    },
+    {
+      "image": "https://images.ayuga.in/catalog/product/1/0/100__kumkumadi_facial_oil_02.jpeg?auto=format&fit=crop&width=500&auto=compress",
+      "name": "100% Kumkumadi Face Oil 15 ml",
+      "brandName": "Makes Skin Radiant | Reduces Dark Spots & Pigmentation | Moisturizes Skin",
+      "totalPrice": "799",
+      "discount": "15",
+      "shipping": "3",
+      "quantity": "2",
+      "rating": {
+        "rated": "99",
+        "rating": "4"
+      },
+      "sutability": "girls",
+      "id": 8
+    },
+    {
+      "image": "https://images.aqualogica.in/catalog/product/j/e/jello-gel-moisturizer-1_1.jpg",
+      "name": "Glow+ JellO Moisturizer 50 g",
+      "brandName": "Vitamin C & Papaya for Illuminating Moisturization & Skin Hydration | Non Sticky",
+      "totalPrice": "499",
+      "discount": "10",
+      "shipping": "5",
+      "quantity": "1",
+      "rating": {
+        "rated": "45",
+        "rating": "3"
+      },
+      "sutability": "girls",
+      "id": 9
+    },
+    {
+      "image": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/Wrinkle-Warrior-Kit_1_599c6ab5-8ef7-4473-bee9-466f36f94f1e_640x.jpg?v=1632116103",
+      "name": "RESTORE & REVITALISE SKIN",
+      "brandName": "GET A FREE JADE ROLLER WITH RESTORE & REVITALISE SKIN",
+      "totalPrice": "1999",
+      "discount": "21",
+      "shipping": "2",
+      "quantity": "1",
+      "rating": {
+        "rated": "54",
+        "rating": "4"
+      },
+      "sutability": "girls",
+      "id": 10
+    },
+    {
+      "image": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/Wrinkle-Warrior-Kit_1_599c6ab5-8ef7-4473-bee9-466f36f94f1e_640x.jpg?v=1632116103",
+      "name": "RESTORE & REVITALISE SKIN",
+      "brandName": "GET A FREE JADE ROLLER WITH RESTORE & REVITALISE SKIN",
+      "totalPrice": "1999",
+      "discount": "21",
+      "shipping": "2",
+      "quantity": "1",
+      "rating": {
+        "rated": "54",
+        "rating": "4"
+      },
+      "sutability": "girls",
+      "id": 11
+    },
+    {
+      "image": "https://cdn.shopify.com/s/files/1/0014/3514/0183/products/Wrinkle-Warrior-Kit_1_599c6ab5-8ef7-4473-bee9-466f36f94f1e_640x.jpg?v=1632116103",
+      "name": "RESTORE & REVITALISE SKIN",
+      "brandName": "GET A FREE JADE ROLLER WITH RESTORE & REVITALISE SKIN",
+      "totalPrice": "1999",
+      "discount": "21",
+      "shipping": "2",
+      "quantity": "1",
+      "rating": {
+        "rated": "54",
+        "rating": "4"
+      },
+      "sutability": "girls",
+      "id": 12
+    },
+    {
+      "image": "https://www.buywow.in/cdn.shopify.com/s/files/1/1375/4957/products/kit2_1024x1024_97cbab0e-c249-44e5-a464-c444377f977b_360x.jpg?v=1657168806",
+      "name": "VITAMIN C FACE ULTIMATE KIT FOR SKIN BRIGHTENING",
+      "brandName": "WOW",
+      "totalPrice": "1599",
+      "discount": "24",
+      "shipping": "4",
+      "quantity": "1",
+      "rating": {
+        "rated": "54",
+        "rating": "4"
+      },
+      "sutability": "All skin types",
+      "id": 13
+    },
+    {
+      "image": "https://cdn.shopify.com/s/files/1/0081/9871/7493/products/1_8.jpg?v=1660668737&width=493",
+      "name": "24K Gold Radiance Beauty Boosting Face Elixir",
+      "brandName": "Brighten & Glow",
+      "totalPrice": "2240",
+      "discount": "25",
+      "shipping": "4",
+      "quantity": "1",
+      "rating": {
+        "rated": "67",
+        "rating": "4"
+      },
+      "sutability": "All skin types",
+      "id": 14
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/416/416/ks7tuvk0/fairness/f/e/u/30-vitamin-c-serum-for-anti-agning-pigmantation-removal-spotless-original-imag5udqgmbb24bc.jpeg?q=70",
+      "name": "6Drops VITAMIN C SERUM FOR ANTI AGNING& PIGMANTATION REMOVAL SPOTLESS SMOOTH& BRIGHT FACE SERUM (30 ml)  (30 ml)",
+      "brandName": "6Drops",
+      "totalPrice": "189",
+      "discount": "5",
+      "shipping": "5",
+      "quantity": "1",
+      "rating": {
+        "rated": "67",
+        "rating": "4"
+      },
+      "sutability": "All skin types",
+      "id": 15
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/XN/XM/ED/144690300/aloevera-face-body-gel-200g-500x500-1000x1000.png",
+      "name": "Kudos Aloe Vera Face Body Gel 200 Gm",
+      "brandName": "Uniqrr Technologies Private Limited",
+      "totalPrice": "180",
+      "discount": "2",
+      "shipping": "4",
+      "quantity": "3",
+      "rating": {
+        "rated": "55",
+        "rating": "4"
+      },
+      "sutability": "All skin types",
+      "id": 16
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/SE/BD/BH/149051703/1-59b2142d-49d0-4963-85c0-3b6c69dfd933-1000x1000.jpg",
+      "name": "Under Eye Cream (30gm)",
+      "brandName": "Minies E-Retail LLP",
+      "totalPrice": "300",
+      "discount": "5",
+      "shipping": "3",
+      "quantity": "3",
+      "rating": {
+        "rated": "34",
+        "rating": "4"
+      },
+      "sutability": "girls",
+      "id": 17
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/7/EE/PM/FV/44367367/smoothinghairprimer-1000x1000.jpg",
+      "name": "Smoothing Hair Primer",
+      "brandName": "Maple Herbs Private Limited",
+      "totalPrice": "2769",
+      "discount": "4",
+      "shipping": "4",
+      "quantity": "4",
+      "rating": {
+        "rated": "67",
+        "rating": "5"
+      },
+      "sutability": "girls",
+      "id": 18
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/ZV/KL/EZ/26622818/aloevracucumberavocado1-83e2ebbd-7cf9-4ef9-adce-a666198f0812-1000x1000.jpg",
+      "name": "Aloe Vera Gel With Cucumber And Avocado Extracts - Ideal For Skin, Face, Acne Scars, Hair Care & Dark Circles",
+      "brandName": "TSBT International",
+      "totalPrice": "315",
+      "discount": "4",
+      "shipping": "3",
+      "quantity": "2",
+      "rating": {
+        "rated": "45",
+        "rating": "4"
+      },
+      "sutability": "All skin types",
+      "id": 19
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/GP/DE/RB/15912119/buypearescentbluecosmeticmicacolouronlineinindia-theartconnect-1000x1000.jpg",
+      "name": "Pearlescent Cosmetic Mica Colour - Blue",
+      "brandName": "Art Mart",
+      "totalPrice": "1000",
+      "discount": "4",
+      "shipping": "3",
+      "quantity": "5",
+      "rating": {
+        "rated": "67",
+        "rating": "3"
+      },
+      "sutability": "All skin types",
+      "id": 20
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/11/VQ/EF/GJ/90021126/estee-lauder-beautiful-edp-perfume-spray-for-women-1000x1000.jpg",
+      "name": "Estee Lauder Beautiful Edp Perfume Spray For Women 75ml",
+      "brandName": "Bellegirl Lifestyle Pvt Ltd",
+      "totalPrice": "5559",
+      "discount": "5",
+      "shipping": "3",
+      "quantity": "1",
+      "rating": {
+        "rated": "78",
+        "rating": "5"
+      },
+      "sutability": "All skin types",
+      "id": 21
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/MM/UQ/TM/25023829/a21tbc7780543-ss-na-1000x1000.jpg",
+      "name": "The Beauty Co Chocolate Coffee Face Mask - 100 gm",
+      "brandName": "Panchal Hygiene Products",
+      "totalPrice": "399",
+      "discount": "5",
+      "shipping": "4",
+      "quantity": "2",
+      "rating": {
+        "rated": "79",
+        "rating": "4"
+      },
+      "sutability": "All skin types",
+      "id": 22
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/11/SP/FB/RH/50433867/1604160105154-bb5ef-512-originnm80prcnt-1000x1000.jpg",
+      "name": "Dermacol Make-up Cover Foundation With Oval Foundation Brush (pack Of 2)",
+      "brandName": "Abyalife",
+      "totalPrice": "299",
+      "discount": "2",
+      "shipping": "4",
+      "quantity": "2",
+      "rating": {
+        "rated": "99",
+        "rating": "3"
+      },
+      "sutability": "All skin types",
+      "id": 23
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/ML/GL/RU/158650723/1670584610326-artboard1copy202-1000x1000.jpeg",
+      "name": "Black Beard Charcoal Neem Face Wash Revitalizes Skin Cleanses Pores Face Wash | Energizing Face Wash For Oil And Acne Control - 100ml",
+      "brandName": "Zero Lifestyle Private Limited",
+      "totalPrice": "150",
+      "discount": "2",
+      "shipping": "3",
+      "quantity": "2",
+      "rating": {
+        "rated": "43",
+        "rating": "5"
+      },
+      "sutability": "Man",
+      "id": 24
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/6/WA/SF/NN/48830831/body-glitter-1000x1000.jpg",
+      "name": "Hair & Body Glitter Shimmer Halloween Kids & Adults Fancy Dress Costume Accessories",
+      "brandName": "Bookmycostume",
+      "totalPrice": "249",
+      "discount": "3",
+      "shipping": "1",
+      "quantity": "1",
+      "rating": {
+        "rated": "55",
+        "rating": "3"
+      },
+      "sutability": "girls",
+      "id": 25
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/MR/IY/OV/107159044/bhumih-ayurveda-tarini-beauty-oil-skin-care-591-1000x1000.jpg",
+      "name": "Bhumih Ayurveda Tarini Beauty Oil",
+      "brandName": "Revering Lifestyle LLP",
+      "totalPrice": "999",
+      "discount": "4",
+      "shipping": "4",
+      "quantity": "1",
+      "rating": {
+        "rated": "89",
+        "rating": "5"
+      },
+      "sutability": "All skin types",
+      "id": 26
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/11/QE/WU/WU/76439700/face-pack-1000x1000.png",
+      "name": "De-tan 3 In 1 Face Pack | Charcoal Powder | Tea Tree Oil | Mint | For All Skin Type (60gm)",
+      "brandName": "Dh Care Products",
+      "totalPrice": "99",
+      "discount": "0",
+      "shipping": "1",
+      "quantity": "1",
+      "rating": {
+        "rated": "65",
+        "rating": "4"
+      },
+      "sutability": "girls",
+      "id": 27
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/12/RK/WS/PK/84083524/multani-mitti-orange-facepack2-min-600x-2baeb2c3-93f3-4064-aa6c-176598a5dc46-1000x1000.webp",
+      "name": "Banjara's Multani Mitti + Orange Face Pack Powder 100gms (5*20gms)",
+      "brandName": "Jeevaa Organics",
+      "totalPrice": "70",
+      "discount": "0",
+      "shipping": "3",
+      "quantity": "1",
+      "rating": {
+        "rated": "45",
+        "rating": "3"
+      },
+      "sutability": "All skin types",
+      "id": 28
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/IB/WV/YF/81195827/il-794xn-2250668216-3niz-1000x1000.jpg",
+      "name": "Dead Sea Mud Clay Powder",
+      "brandName": "Bizpressions",
+      "totalPrice": "142",
+      "discount": "0",
+      "shipping": "3",
+      "quantity": "1",
+      "rating": {
+        "rated": "32",
+        "rating": "3"
+      },
+      "sutability": "All skin types",
+      "id": 29
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/QN/ZK/QV/144690300/capture-22e0e500-22eb-42d1-9d48-f8e7c8ae486e-1000x1000.jpg",
+      "name": "Kudos Aloe Vera Gel 100 Gm (pack Of 2)",
+      "brandName": "Uniqrr Technologies Private Limited",
+      "totalPrice": "188",
+      "discount": "2",
+      "shipping": "2",
+      "quantity": "3",
+      "rating": {
+        "rated": "33",
+        "rating": "4"
+      },
+      "sutability": "All skin types",
+      "id": 30
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/8/IN/UX/ZQ/44367367/chillpillmist-1000x1000.jpg",
+      "name": "Aura Cacia, Chill Pill Aromatherapy Mist (2 Oz) | Maple Herbs",
+      "brandName": "Maple Herbs Private Limited",
+      "totalPrice": "2135",
+      "discount": "5",
+      "shipping": "3",
+      "quantity": "1",
+      "rating": {
+        "rated": "56",
+        "rating": "4"
+      },
+      "sutability": "All skin types",
+      "id": 31
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/9/FR/LB/UU/26622818/aloeveraturmericsandalsaffron2-500x500.jpg",
+      "name": "Aloe Vera Gel With Haldi Chandan Kesar - Ideal For Skin, Face, Acne Scars & Dark Circles",
+      "brandName": "TSBT International",
+      "totalPrice": "550",
+      "discount": "3",
+      "shipping": "3",
+      "quantity": "1",
+      "rating": {
+        "rated": "44",
+        "rating": "4"
+      },
+      "sutability": "All skin types",
+      "id": 32
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/YG/NM/WA/15912119/burlesque-pink-3-x1400-2d6b00f1-3141-45da-99ee-9d0763f36242-1000x1000.jpg",
+      "name": "Pearlescent Cosmetic Mica Colour - Magenta",
+      "brandName": "Art Mart",
+      "totalPrice": "6000",
+      "discount": "4",
+      "shipping": "2",
+      "quantity": "1",
+      "rating": {
+        "rated": "33",
+        "rating": "5"
+      },
+      "sutability": "girls",
+      "id": 33
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/IT/SH/XV/25023829/81ke9ntiu1l-sl1500-1000x1000.jpg",
+      "name": "The Beauty Co. Get-Set-Glow Combo for Facial Skincare Routine (Combo of 3)",
+      "brandName": "Panchal Hygiene Products",
+      "totalPrice": "1100",
+      "discount": "3",
+      "shipping": "2",
+      "quantity": "2",
+      "rating": {
+        "rated": "33",
+        "rating": "4"
+      },
+      "sutability": "All skin types",
+      "id": 34
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/AJ/TJ/YS/158650723/1670582220201-artboard1copy11-1000x1000.jpeg",
+      "name": "Black Beard Raw And Naked Coffee Body Butter For Men |vit-e Shea Butter, Cocoa Butter, Coffee Extract, Glycerin |reduces Breakouts, Acne & Signs Of Aging - 100gm",
+      "brandName": "Zero Lifestyle Private Limited",
+      "totalPrice": "150",
+      "discount": "0",
+      "shipping": "3",
+      "quantity": "1",
+      "rating": {
+        "rated": "33",
+        "rating": "4"
+      },
+      "sutability": "Man",
+      "id": 35
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/HV/VQ/QC/107159044/bhumih-ayurveda-luxury-pushp-rainflowers-beauty-cream-skin-care-650-1000x1000.jpg",
+      "name": "Bhumih Ayurveda Luxury Pushp Rainflowers Beauty Cream",
+      "brandName": "Revering Lifestyle LLP",
+      "totalPrice": "659",
+      "discount": "3",
+      "shipping": "2",
+      "quantity": "4",
+      "rating": {
+        "rated": "78",
+        "rating": "3"
+      },
+      "sutability": "All skin types",
+      "id": 36
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/ZQ/MY/IE/13078142/elibliss-hair-oil-for-damage-repair-smooth-and-silk-hair-100-ml-pack-of-2-283832-1000x1000.jpg",
+      "name": "Elibliss Hair Oil For Damage Repair, Smooth And Silk Hair 100 Ml Pack Of 2",
+      "brandName": "Store Apt",
+      "totalPrice": "327",
+      "discount": "2",
+      "shipping": "2",
+      "quantity": "1",
+      "rating": {
+        "rated": "44",
+        "rating": "4"
+      },
+      "sutability": "All skin types",
+      "id": 37
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/7/GM/VC/HI/7304076/2-e7995496-93f4-407d-8ad3-1bc73ea73bf2-500x500.jpg",
+      "name": "Vlcc Salon Series Insta Glow Facial Kit (6 Facials) (240gm + 12ml)",
+      "brandName": "Green Leaf",
+      "totalPrice": "499",
+      "discount": "0",
+      "shipping": "3",
+      "quantity": "1",
+      "rating": {
+        "rated": "55",
+        "rating": "5"
+      },
+      "sutability": "girls",
+      "id": 38
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/MK/NO/JK/13078142/1626281333605-zqr8ekrw-originnm80prcnt-1000x1000.webp",
+      "name": "Best Perfect Beauty Fashion Kit (4 Items In The Set)",
+      "brandName": "Store Apt",
+      "totalPrice": "369",
+      "discount": "2",
+      "shipping": "3",
+      "quantity": "1",
+      "rating": {
+        "rated": "77",
+        "rating": "5"
+      },
+      "sutability": "All skin types",
+      "id": 39
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/7/UN/VX/IZ/44367367/cucumber-aloefaciallotion-1000x1000.jpg",
+      "name": "Cucumber & Aloe Facial Lotion",
+      "brandName": "Maple Herbs Private Limited",
+      "totalPrice": "2769",
+      "discount": "3",
+      "shipping": "2",
+      "quantity": "1",
+      "rating": {
+        "rated": "55",
+        "rating": "4"
+      },
+      "sutability": "All skin types",
+      "id": 40
     }
   ],
-  "homeDecor":[
+  "homeDecor": [
     {
-       "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/ZY/UF/VS/100633551/1671552068812-sku-0015-0-1000x1000.jpg",
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/ZY/UF/VS/100633551/1671552068812-sku-0015-0-1000x1000.jpg",
       "name": "Baby Monk",
       "brandName": "M/s Garden Basket",
       "totalPrice": "349",
       "discount": "10",
       "shipping": "2",
-      "quantity":"4",
+      "quantity": "4",
       "rating": {
         "rated": "50",
         "rating": "5"
       },
-      "description":"Cute Buddha Monk Set wearing mala. The Decorative Statue is the perfect addition to any home decor or Feng Shui gift collection.The four resin monks represent not looking at things, not listening to something, not talking and not moving.Car dashboards, bedrooms, homes, office desks and other occasions are applicable. It is the best gift to send friends' and families' children's room.",
+      "description": "Cute Buddha Monk Set wearing mala. The Decorative Statue is the perfect addition to any home decor or Feng Shui gift collection.The four resin monks represent not looking at things, not listening to something, not talking and not moving.Car dashboards, bedrooms, homes, office desks and other occasions are applicable. It is the best gift to send friends' and families' children's room.",
       "id": 1
     }
   ]
