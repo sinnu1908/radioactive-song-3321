@@ -1,0 +1,307 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "shri",
+      "age": 24
+    },
+    {
+      "id": 2,
+      "name": "shr",
+      "age": 25
+    }
+  ],
+  "mensWear": [
+    {
+      "id": 1,
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/11/NV/HC/WK/156564966/5c2a1684-2-1000x1000.jpg",
+      "name": "Be Desi Men Cotton Star Butta Cuff Detail Kurta",
+      "brandName": "Navsari Trends LLP",
+      "totalPrice": 550,
+      "discount": 20,
+      "shippingDay": 1,
+      "color": "Stone Grey",
+      "size": "M",
+      "rating": {
+        "rated": 5,
+        "ratingNo": 852
+      },
+      "fabric": "Cotton",
+      "length": "Long Kurta - Knee Length"
+    },
+    {
+      "id": 2,
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/3/CN/UQ/NH/52782818/vougewhitedarkblue-1000x1000.jpg",
+      "name": "Men's Half Sleeve Vouge Casual T-Shirt",
+      "brandName": "Cowboy Stores",
+      "totalPrice": 899,
+      "discount": 40,
+      "shippingDay": 1,
+      "color": "white-blue",
+      "size": "XL",
+      "rating": {
+        "rated": 4.5,
+        "ratingNo": 80
+      },
+      "fabric": "Cotton",
+      "length": "Half Sleeve"
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/8/AN/IP/FC/10883763/urm001361pwhitegreycolor12-3-500x500.jpg",
+      "name": "Men White Striped Casual Shirt",
+      "brandName": "AKR Industries Private Limited",
+      "totalPrice": "359",
+      "discount": "5",
+      "shipping": "2",
+      "color": "White",
+      "size": "X",
+      "rating": {
+        "rated": "50",
+        "rating": "5"
+      },
+      "fabric": "Cotton",
+      "style": "Full Sleeves",
+      "id": 3
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/RC/EN/II/144394509/1634094996754-img-3974-590x-originnm80prcnt-1000x1000.webp",
+      "name": "Trendy Polycotton Hoodie Tank Tops For Men",
+      "brandName": "B Raja International",
+      "totalPrice": "1299",
+      "discount": "40",
+      "shipping": "3",
+      "color": "Grey",
+      "size": "2XL",
+      "rating": {
+        "rated": "26",
+        "rating": "4"
+      },
+      "fabric": "Polycotton",
+      "style": "Full Sleeves",
+      "id": 4
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/10/VO/WR/KJ/156564966/8-13-1000x1000.jpg",
+      "name": "Be Desi Men Cotton Abstract Design Regular Fit Long Kurta",
+      "brandName": "Navsari Trends LLP",
+      "totalPrice": "600",
+      "discount": "15",
+      "shipping": "1",
+      "color": "Light Orange",
+      "size": "M",
+      "rating": {
+        "rated": "125",
+        "rating": "5"
+      },
+      "fabric": "Cotton",
+      "style": "Long Kurta",
+      "id": 5
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/9/QC/MW/JE/153990963/whatsappimage2022-08-20at11-55-28am-1000x1000.jpg",
+      "name": "Short Pure Cotton Kurta",
+      "brandName": "Anant Tex Exports Private Limited",
+      "totalPrice": "895",
+      "discount": "40",
+      "shipping": "2",
+      "color": "White",
+      "size": "M",
+      "rating": {
+        "rated": "356",
+        "rating": "5"
+      },
+      "fabric": "Cotton",
+      "style": "Short Kurta",
+      "id": 6
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/HA/AT/EN/13078142/1666892784553-1505-55-41qll28jhl-aa500-originnm80prcnt-1000x1000.webp",
+      "name": "Uathayam Exotic Cotton Rich Fancy Fit Kurta For Men",
+      "brandName": "Store Apt",
+      "totalPrice": "1144",
+      "discount": "60",
+      "shipping": "2",
+      "color": "Sky blue",
+      "size": "L",
+      "rating": {
+        "rated": "64",
+        "rating": "4"
+      },
+      "fabric": "Cotton",
+      "style": "Full Sleeves Kurta",
+      "id": 7
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/BD/VV/IW/4120003/1621858080192-1-23-y5zxvff-originnm80prcnt-1000x1000.jpg",
+      "name": "Black Formal Pants For Men",
+      "brandName": "Ramshiv Exports",
+      "totalPrice": "876",
+      "discount": "20",
+      "shipping": "3",
+      "color": "Black",
+      "size": "30",
+      "rating": {
+        "rated": "998",
+        "rating": "4"
+      },
+      "fabric": " Polycotton",
+      "style": " Regular Fit",
+      "id": 8
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/2/WX/IX/CY/5444595/4-2804dd17-4707-48e8-a8d2-d11c46ec7646-1000x1000.jpg",
+      "name": "Blue Denim Single Pocket Full Sleeve Shirt",
+      "brandName": "Guniaa",
+      "totalPrice": "999",
+      "discount": "35",
+      "shipping": "1",
+      "color": "Blue",
+      "size": "L",
+      "rating": {
+        "rated": "7",
+        "rating": "5"
+      },
+      "fabric": "Cotton",
+      "style": "Full Sleeve Shirt",
+      "id": 9
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/11/PB/NO/BD/33714354/romano-nx-mens-100-cotton-long-sleeve-regular-fit-polo-t-shirt-romanonxcom-583437-1000x1000.jpg",
+      "name": "Romano Nx Men's 100% Cotton Long Sleeve Regular Fit Polo T-shirt",
+      "brandName": "Romano Nx",
+      "totalPrice": "898",
+      "discount": "23",
+      "shipping": "2",
+      "color": "Grey",
+      "size": "L",
+      "rating": {
+        "rated": "45",
+        "rating": "5"
+      },
+      "fabric": "Cotton",
+      "style": " Regular Fit Polo T-shirt",
+      "id": 10
+    }
+  ],
+  "footwear": [
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/NC/KX/SK/108834819/20230206-163009-1000x1000.jpg",
+      "name": "Sparkly Retro Platform Heels",
+      "brandName": "Bling Little Thing",
+      "totalPrice": "1598",
+      "discount": "60",
+      "shipping": "2",
+      "color": "Pink",
+      "size": "Euro 37",
+      "rating": {
+        "rated": "40",
+        "rating": "5"
+      },
+      "material": "Synthetic",
+      "designType": "Sandals",
+      "id": 1
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/XO/SO/RK/93561655/59-1113f3e7-1e75-4389-819e-6ab62053cc5a-1000x1000.jpg",
+      "name": "Hawai Slipper/ Flip Flop",
+      "brandName": "Banjara",
+      "totalPrice": "108",
+      "discount": "3",
+      "shipping": "1",
+      "color": "Brown",
+      "size": "6",
+      "rating": {
+        "rated": "52",
+        "rating": "4"
+      },
+      "material": "PVC",
+      "designType": "Slipper",
+      "id": 2
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/11/ZR/ZD/GD/31800535/1591776581077-151-21-1-originnm80prcnt-1000x1000.jpg",
+      "name": "Men's Stylish Beige Tan Brown Leatherette High Ankle Length Long Boot",
+      "brandName": "Dmoor",
+      "totalPrice": "1512",
+      "discount": "25",
+      "shipping": "2",
+      "color": "Brown",
+      "size": "UK8",
+      "rating": {
+        "rated": "614",
+        "rating": "5"
+      },
+      "material": "Synthetic",
+      "designType": "Flat Boots",
+      "id": 3
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/8/IY/KM/EN/9422220/footwear-shoe-outdoor-womens-hollow-large-size-pointed-toe-flats-black-33-shoes-795-1000x1000.jpg",
+      "name": "Women's Hollow Large Size Pointed Toe Flats",
+      "brandName": "My Online Collection Store",
+      "totalPrice": "3199",
+      "discount": "50",
+      "shipping": "2",
+      "color": "Black",
+      "size": "5",
+      "rating": {
+        "rated": "21",
+        "rating": "4"
+      },
+      "material": "Synthetic",
+      "designType": "Toe Flats",
+      "id": 4
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/3/HV/OX/XH/148627789/img-6291-1000x1000.jpg",
+      "name": "Women V-Strap Sandals",
+      "brandName": "Woodland",
+      "totalPrice": "499",
+      "discount": "20",
+      "shipping": "1",
+      "color": "Yellow-Brown",
+      "size": "8",
+      "rating": {
+        "rated": "32",
+        "rating": "5"
+      },
+      "material": "Synthetic",
+      "designType": "V-strap Sandals",
+      "id": 5
+    }
+  ],
+  "beautyProducts":[
+    {
+       "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/AD/JF/FM/7304076/vitamincdayandnightcombo-500x500.jpg",
+      "name": "Mamaearth Vitamin C Day And Night Combo",
+      "brandName": "Mamaearth",
+      "totalPrice": "1198",
+      "discount": "25",
+      "shipping": "2",
+      "quantity":"2*200 ml",
+      "rating": {
+        "rated": "40",
+        "rating": "5"
+      },
+      "sutaibility":"All skin type",
+      "id": 1
+    }
+  ],
+  "homeDecor":[
+    {
+       "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/ZY/UF/VS/100633551/1671552068812-sku-0015-0-1000x1000.jpg",
+      "name": "Baby Monk",
+      "brandName": "M/s Garden Basket",
+      "totalPrice": "349",
+      "discount": "10",
+      "shipping": "2",
+      "quantity":"4",
+      "rating": {
+        "rated": "50",
+        "rating": "5"
+      },
+      "description":"Cute Buddha Monk Set wearing mala. The Decorative Statue is the perfect addition to any home decor or Feng Shui gift collection.The four resin monks represent not looking at things, not listening to something, not talking and not moving.Car dashboards, bedrooms, homes, office desks and other occasions are applicable. It is the best gift to send friends' and families' children's room.",
+      "id": 1
+    }
+  ]
+}
