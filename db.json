@@ -19,7 +19,7 @@
       "brandName": "Navsari Trends LLP",
       "totalPrice": 550,
       "discount": 20,
-      "shippingDay": 1,
+      "shipping": 1,
       "color": "Stone Grey",
       "size": "M",
       "rating": {
@@ -36,7 +36,7 @@
       "brandName": "Cowboy Stores",
       "totalPrice": 899,
       "discount": 40,
-      "shippingDay": 1,
+      "shipping": 1,
       "color": "white-blue",
       "size": "XL",
       "rating": {
