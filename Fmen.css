@@ -20,8 +20,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-weight: normal;
-  font-family: sans-serif;
+}
+
+body{
+  font-family: 'Manrope', sans-serif;
+  color:#121212;
 }
 
 /* ====================== navbar */
@@ -96,6 +99,9 @@ box-shadow: rgba(0, 0, 0, 1) 0px 1px 3px 0px, rgba(27, 31, 35, 0.1) 0px 0px 0px 
 }
 
 /* ====================== See results about */
+
+
+
 main {
   padding: 80px 20px 0 20px;
 }
@@ -128,7 +134,130 @@ main > button {
 
 /* ====================== mainCont */
 
-#mainCont {
+#main{
+  display:flex;
+  width:90%;
+  margin:auto;
+  justify-content: space-between;
+
+}
+
+#functionality{
+
+width:18%;
+}
+
+/* container css */
+#container{
+  width:80%;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:20px;
+  
+  font-weight: 500;
+}
+
+#container>div .image{
+width:100%;
+height:300px;
+}
+
+/* imgBtn CSS */
+#container .imgBtndiv{
+  position:relative;
+}
+
+#container .BtnAdd{
+  border-style: none;
+  padding:7px 12px;
+  font-size: 14px;
+  background-color: #FF7035;
+  color:#FFFFFF;
+  position:absolute;
+  left:33%;
+  bottom:0;
+  opacity:0;
+  transition:1s;
+
+}
+#container .imgBtndiv:hover .BtnAdd{
+  bottom:12%;
+  opacity:1;
+}
+#container .BtnAdd{
+  cursor:pointer;
+}
+
+#container .image{
+  width:100%;
+  margin:0 0 8px;
+
+}
+
+
+#container>div .name{
+  font-size: 15px; 
+  color:black; 
+  font-weight: 400;
+  margin:0 0 4px;
+  
+}
+
+#container>div .brandName{
+  font-size:14px;
+  color:#848484;
+}
+
+#price{
+  display:flex;
+  height:40px;
+  align-items: center;
+  
+}
+
+#price .discountPrice{
+  font-size: 16px;
+  color:#FF7035;
+  margin-right:8px;
+  font-weight: bolder;
+}
+
+#price .totalPrice{
+  color:#848484;
+  font-size:12px;
+  text-decoration-line: line-through;
+}
+
+#container .discount{
+  font-size: 14px;
+  color:#67AD5B;
+  font-weight: bold;
+  margin:0 0 8px;
+}
+#container .shippingDay{
+  font-size:12px;
+  color:#121212;
+}
+
+.sorting{
+  font-size: 16px;
+  color:#121212;
+}
+.sorting>h2,.filter>h2{
+  font-size: 16px;
+}
+.sorting>input[type=radio]{
+background-color: red;
+  height:18px;
+  width:16px;
+  margin-right:5px;
+  
+}
+
+
+
+
+/* #mainCont {
   margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -136,8 +265,9 @@ main > button {
 }
 
 #mainCont > div  {
-  width: 100%;
-  /* height: 100%; */
+  width: 100%; */
+
+  /* height: 100%;
   border-radius: var(--border-radius-3);
   cursor: pointer;
   border: 1px solid red
@@ -183,4 +313,4 @@ main > button {
 #mainCont > div  > p:nth-child(6) {
   margin-top: 10px;
   color: var(--color-price);
-}
+} */
