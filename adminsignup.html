@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page</title>
+    <style>
+        #box{
+    width: 30%;
+    /* border: solid; */
+    margin: auto;
+    /* margin-top: 100px; */
+    /* margin-bottom:  */
+    background-color: white;
+}
+#box > img{
+    /* height: 200px;
+    width: 300px; */
+    background-color: transparent;
+
+}
+#box .main {
+    /* padding: 30px; */
+    /* border: solid; */
+    font-size: 20px;
+    width: 100%; 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.sign {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+.sign > a{
+    text-decoration: 0;
+    color: black;
+    padding-left: 10px;
+}
+.main > .lg{
+    padding: 0px 20px 10px 30px; 
+}
+.lg > input{
+    padding: 20px;
+    width: 90%;
+}
+.lg > a > button{
+    padding: 20px;
+    width: 99%;
+    font-size: 20px;
+    color: white;
+    background-color:rgb(15, 15, 70);
+    border: 0;
+    font-weight: bold;
+}
+.main > .pic{
+    /* border: solid black; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+.pic > img{
+    width: 40px;
+    /* border: 1px solid black; */
+    /* margin-right: 20px; */
+    padding: 20px;
+    cursor: pointer;
+}
+.pic > img:hover{
+    background-color: rgb(221, 219, 219);
+    /* border-radius: 5px; */
+}
+.checkb{
+    display: flex;
+    /* border: solid; */
+    margin-top: 0px;
+    font-size: 20px;
+}
+.checkb > input {
+    margin: 10px;
+}
+</style>
+</head>
+<body>
+    <div id="box">
+        <!-- <img src="../photos/logo.surveymonkey.jpeg" alt="error"> -->
+        <div class="main">
+            <div class="sign">
+                <p>Already have an account? </p>
+                <a href="../HTML/adminlogin.html">Log in</a>
+            </div>
+            <div class="lg">
+                <h1>Create an Account</h1>
+                <p>Email address</p>
+                <input type="email" placeholder="entr email address">
+
+                <div class="checkb">
+                    <input type="checkbox">
+                    <p>You agree to the Terms of Use and Privacy Notice.</p>
+                </div>
+
+                <div class="checkb">
+                    <input type="checkbox">
+                    <p>You agree to receive product news and special promotions via email. You can opt-out of these emails in your My Account page anytime.</p>
+                </div>
+
+                <a href="../HTMLadminpassword.html"><button>Next</button></a>
+                <p>Or Sign up with mobile number</p>
+                <input type="email" placeholder="email">
+            </div>
+            <div class="pic">
+                <img class="micro" src="../photos/download.png" alt="error">
+                <img src="../photos/facebook logodownload.png" alt="error">
+                <img src="../photos/google logo.png" alt="error">
+                <img src="../photos/240px-LinkedIn_logo_initials.png" alt="error">
+                <img src="../photos/appli logo.png" alt="error">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+              <!-- put these in admin page .htmlfile
+              <p><a href="../HTML/adminlogin.html">Log in</a></p>
+              <a id="btn" href="../HTML/adminsignup.html">Signup -></a> -->
