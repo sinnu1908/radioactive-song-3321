@@ -7,8 +7,8 @@
   --color-orange: #f9af23;
   --color-orange-1: #f58013;
 
-  --color-price: #008000;
-  --color-info-light: #808080;
+    --color-logo: #10a310;
+  --color-info-light: #7d8da1;
 
   --card-border-radius: 2rem;
   --border-radius-1: 0.4rem;
@@ -54,7 +54,7 @@
 }
 
 #logo > a > h1  {
-  color: var(--color-orange-1);
+  color: var(--color-orange);
   font-family:Impact;
 }
 
@@ -81,7 +81,7 @@ box-shadow: rgba(0, 0, 0, 1) 0px 1px 3px 0px, rgba(27, 31, 35, 0.1) 0px 0px 0px 
   border: 0;
   padding: var(--padding-1);
   /* background-color: #2A6462; */
-  background : var(--color-orange-1);
+  background : var(--color-orange);
   color: var(--color-white);
   font-size: larger;
   cursor: pointer;
@@ -115,14 +115,14 @@ main > button {
   padding: 5px 10px;
   border-radius: var(--card-border-radius);
   background: var(--color-white);
-  color: var(--color-orange-1);
-  border-color: var(--color-orange-1);
+  color: var(--color-orange);
+  border-color: var(--color-orange);
   font-weight: bolder;
   cursor: pointer;
 }
 
 .fillterBtn:hover {
-  background: var(--color-orange-1);
+  background: var(--color-orange);
   color: var(--color-white);
 }
 
@@ -160,7 +160,7 @@ main > button {
   opacity: 1;
   cursor: pointer;
   border: 0;
-  background: var(--color-orange-1);
+  background: var(--color-orange);
   color: var(--color-white);
   font-size: ;
 }
@@ -177,7 +177,7 @@ main > button {
 
 #mainCont > div  > h2:nth-child(5) {
   margin-top: 10px;
-  color: var(--color-orange-1);
+  color: var(--color-orange);
 }
 
 #mainCont > div  > p:nth-child(6) {

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./cssFile/signIn.css" />
+  </head>
+  <body>
+    <div id="loginBody">
+      <div id="loginCont">
+        <!-- =========================== firstLoginDiv -->
+        <!-- =========================== SignIn -->
+        <div id="firstLoginDiv">
+          <div>
+            <form action="">
+              <h1>Sign in</h1>
+              <div id="danger">
+                <p>Incorrect Credentials</p>
+              </div>
+              <input
+                type="email"
+                placeholder="Email or Phone Number"
+                id="email"
+              />
+              <input type="password" placeholder="Password" id="password" />
+              <a href="">Forgot password?</a>
+              <a href="./index.html"><button>Sign in</button></a>
+              <p>
+                Don't have account?<a href="signUp.html" id="signin"> Signup</a>
+              </p>
+              <a href=""
+                ><div id="facebook">
+                  <img src="./imageFile/facebook.png" alt="" />
+                  <p>Signin with Facebook</p>
+                </div></a
+              >
+              <a href=""
+                ><div id="google">
+                  <img src="./imageFile/google.png" alt="" />
+                  <p>Signin with Google</p>
+                </div></a
+              >
+            </form>
+          </div>
+        </div>
+
+        <!-- =========================== secondLoginDiv -->
+        <div id="secondLoginDiv">
+          <div id="image">
+            <img src="./imageFile/signin.png" alt="image not found" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./jsFile/signIn.js"></script>
+</html>

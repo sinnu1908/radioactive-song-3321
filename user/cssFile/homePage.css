@@ -1,0 +1,486 @@
+/* ==================== ROOT VARIBLES */
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --color-navbar: #0f1111;
+  --color-orange: #f9af23;
+  --color-orange-1: #f58013;
+
+  --color-logo: #10a310;
+  --color-info-light: #7d8da1;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.5rem;
+
+  --padding-1: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-family: Verdana;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+/* ====================== navbar */
+
+#navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px 0 25px;
+  position: fixed;
+  background: var(--color-navbar);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+#logo {
+  width: 20%;
+}
+
+#logo > a {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+#logo > a > img {
+  width: 100%;
+}
+
+#logo > a > h1 {
+  color: var(--color-orange);
+  font-family: Impact;
+}
+
+#logo > a > h1 > span {
+  color: var(--color-white);
+  font-family: Impact;
+}
+
+#search {
+  width: 50%;
+}
+
+#search > input {
+  width: 80%;
+  border-radius: var(--border-radius-1);
+  border: 0;
+  padding: var(--padding-1);
+  box-shadow: rgba(0, 0, 0, 1) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.1) 0px 0px 0px 3px;
+  font-size: larger;
+  color: var(--color-orange);
+}
+::-webkit-input-placeholder {
+  color: var(--color-orange);
+}
+#search > button {
+  border-radius: var(--border-radius-1);
+  border: 0;
+  padding: var(--padding-1);
+  background: var(--color-orange);
+  color: var(--color-white);
+  font-size: larger;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#side3 > a > img {
+  border-radius: var(--border-radius-1);
+  background: var(--color-white);
+}
+
+/* ====================== navbar icon */
+a {
+  color: var(--color-black);
+  font-size: 1rem;
+  text-align: center;
+}
+#icons {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 50px;
+  padding: 100px 25px 0 25px;
+}
+#icons > div > a > div {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 10px;
+}
+#icons > div > a > div:hover {
+  box-shadow: none;
+}
+
+/* ====================== main */
+
+main {
+  padding: 0 25px 0 25px;
+  margin-top: 20px;
+}
+#shopNow > a > img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#STM > a > img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#STM > h1 {
+  margin-bottom: 20px;
+}
+
+/* ====================== Featured Products */
+
+#fProducts {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#fProducts > div {
+  text-align: center;
+}
+#fProducts > div > div:nth-child(1) > img {
+  width: 80%;
+}
+#fProducts > div > div:nth-child(2) > p {
+  text-align: left;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+#fProducts > div > div:nth-child(2) > p:nth-child(2) {
+  color: var(--color-info-light);
+  font-size: 0.7rem;
+}
+#fProducts > div > div:nth-child(2) > h3 {
+  text-align: left;
+  color: var(--color-orange);
+  margin-bottom: 10px;
+}
+#fProducts > div > div:nth-child(2) {
+  padding: 0 30px 0 30px;
+}
+#fProducts > div > div:nth-child(2) > button {
+  width: 100%;
+  border-radius: var(--border-radius-1);
+  padding: 0.5rem;
+  color: var(--color-orange);
+  background: var(--color-white);
+  border: double var(--color-orange);
+  font-size: larger;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#fProducts > div > div:nth-child(2) > button:hover {
+  color: var(--color-white);
+  background: var(--color-orange);
+}
+
+/* ====================== Ladies Wear */
+/* ====================== Ladies Wear icon */
+
+.product {
+  margin-top: 50px;
+}
+.product > a {
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+.product > a > div {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 25px;
+}
+
+/* ====================== advance product design */
+/* ====================== first div */
+
+.advanceProductDesign {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+.advanceProductDesign p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+.advanceProductDesign span {
+  color: var(--color-info-light);
+  font-size: 0.7rem;
+  margin-bottom: 10px;
+}
+.advanceProductDesign h3 {
+  color: var(--color-orange);
+  margin-bottom: 10px;
+}
+.firstDiv {
+  width: 40%;
+}
+.firstDiv > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+.firstDiv > div:nth-child(1) > div {
+  width: 45%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 0 20px 0 20px;
+  cursor: pointer;
+  border-radius: var(--border-radius-1);
+}
+.firstDiv > div:nth-child(1) > div:hover {
+  box-shadow: none;
+}
+.firstDiv > div:nth-child(1) > div > img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: var(--border-radius-1);
+}
+.firstDiv > div:nth-child(2) {
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.firstDiv > div:nth-child(2) > img {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-bottom: 10px;
+  border-radius: var(--border-radius-1);
+}
+.firstDiv > div:nth-child(2) > img:hover {
+  box-shadow: none;
+}
+
+/* ====================== second div */
+
+.secondDiv {
+  width: 40%;
+}
+.secondDiv > div:nth-child(1) {
+  text-align: center;
+  cursor: pointer;
+}
+.secondDiv > div:nth-child(1) > img {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-bottom: 10px;
+  border-radius: var(--border-radius-1);
+}
+.secondDiv > div:nth-child(1) > img:hover {
+  box-shadow: none;
+}
+.secondDiv > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+.secondDiv > div:nth-child(2) > div {
+  width: 45%;
+  padding: 0 20px 0 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  cursor: pointer;
+  border-radius: var(--border-radius-1);
+}
+.secondDiv > div:nth-child(2) > div:hover {
+  box-shadow: none;
+}
+.secondDiv > div:nth-child(2) > div > img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: var(--border-radius-1);
+}
+
+/* ====================== third div */
+
+.thirdDiv {
+  width: 20%;
+}
+.thirdDiv > div {
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+}
+.thirdDiv > div > img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-bottom: 10px;
+  border-radius: var(--border-radius-1);
+}
+.thirdDiv > div > img:hover {
+  box-shadow: none;
+}
+
+/* ====================== image silde */
+
+.imageSilde {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  margin-top: 50px;
+}
+.imageSilde > div {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: var(--border-radius-1);
+  cursor: pointer;
+}
+.imageSilde > div:hover {
+  box-shadow: none;
+}
+.imageSilde > div > div {
+  width: 100%;
+  height: 200px;
+}
+.imageSilde > div > div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+.imageSilde > div > p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.imageSilde > div > h3 {
+  color: var(--color-orange);
+  margin-bottom: 10px;
+}
+
+/* ====================== Search for more products */
+.seeMore {
+  width: 25%;
+  margin: auto;
+}
+.seeMore > a > button {
+  width: 100%;
+  border-radius: var(--border-radius-1);
+  border: 0;
+  padding: var(--padding-1);
+  background: var(--color-orange);
+  color: var(--color-white);
+  font-size: larger;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 20px;
+}
+
+/* ====================== normal product design */
+
+.normalProductDesign {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+.normalProductDesign > div {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: var(--border-radius-1);
+  cursor: pointer;
+}
+.normalProductDesign > div:hover {
+  box-shadow: none;
+}
+.normalProductDesign > div > div {
+  width: 100%;
+  height: 250px;
+}
+.normalProductDesign > div > div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+.normalProductDesign > div > p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.normalProductDesign > div > span {
+  font-size: 0.7rem;
+  color: var(--color-info-light);
+}
+.normalProductDesign > div > h3 {
+  color: var(--color-orange);
+  margin-bottom: 10px;
+}
+
+/* ====================== footer */
+/* ====================== first part */
+
+#footer {
+  width: 100%;
+  padding: 0 25px 0 25px;
+  margin-top: 20px;
+  background: var(--color-navbar);
+  color: var(--color-white);
+}
+#first > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+  padding: 10px 0 10px 0;
+}
+#first > div > img {
+  width: 5%;
+  cursor: pointer;
+}
+/* ====================== second part */
+#second {
+  display: flex;
+}
+#second > div:nth-child(1) {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#second > div:nth-child(1) > div {
+  width: 50%;
+}
+#second > div:nth-child(1) > div > p {
+  margin-top: 10px;
+  cursor: pointer;
+}
+#second > div:nth-child(1) > div > p:hover {
+color: var(--color-orange);
+}
+#second > div:nth-child(2) {
+  width: 100%;
+}
+#second > div:nth-child(2) > h2,
+h3 {
+  margin-bottom: 20px;
+}
+#second > div:nth-child(2) > div {
+  display: flex;
+}
+#second > div:nth-child(2) > div > img {
+  width: 30%;
+  border-radius: var(--border-radius-1);
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* ====================== third part */
+
+#third {
+  margin-top: 20px;
+}
+#third > p {
+  margin-top: 10px;
+  text-align: center;
+}

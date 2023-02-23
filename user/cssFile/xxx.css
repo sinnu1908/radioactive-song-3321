@@ -1,0 +1,127 @@
+/* ==================== ROOT VARIBLES */
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --color-primary: #2e3192;
+  --color-orange: #f9af23;
+  --color-orange-1: #f58013;
+
+  --color-price: #008000;
+  --color-info-light: #7d8da1;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+
+  --padding-1: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  font-family: Verdana;
+}
+
+#loginBody {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: fixed;
+}
+#loginCont {
+  width: 60%;
+  min-height: 70vh;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  display: flex;
+}
+/* =========================== firstLoginDiv */
+#firstLoginDiv {
+  width: 50%;
+  min-height: 100%;
+  background-color: var(--color-white);
+  border-radius: 10px;
+}
+#image {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+    background: var(--color-orange);
+  border-radius: 10px 0 0 10px;
+}
+#image > img {
+  width: 100%;
+}
+
+/* =========================== secondLoginDiv */
+#secondLoginDiv {
+  width: 50%;
+  min-height: 100%;
+  background-color: var(--color-white);
+  border-radius: 0 10px 10px 0;
+  border: 0;
+  padding: 50px;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  display: block;
+}
+#secondLoginDiv > div:nth-child(1) {
+  width: 100%;
+  min-height: 100%;
+}
+h1,
+p {
+  color: var(--color-black);
+}
+a {
+  color: var(--color-info-light);
+}
+img {
+  width: 15%;
+}
+#secondLoginDiv > div:nth-child(1) > form {
+  width: 100%;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+#secondLoginDiv > div:nth-child(1) > form > input {
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px, rgba(0, 0, 0, 0.3) 0px 1px 2px;
+  border-radius: 5px;
+  border: 0;
+  color: var(--color-orange);
+}
+::-webkit-input-placeholder {
+  color: var(--color-orange);
+}
+#secondLoginDiv > div:nth-child(1) > form > a > button {
+  width: 100%;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px, rgba(0, 0, 0, 0.3) 0px 1px 2px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+#secondLoginDiv > div:nth-child(1) > form > a > div {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px, rgba(0, 0, 0, 0.3) 0px 1px 2px;
+  border-radius: 5px;
+}
