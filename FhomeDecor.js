@@ -1,12 +1,13 @@
-let blanketURL=`http://localhost:3000/homeDecor`
+let MensProductUrl=`http://localhost:3000/homeDecor`
 let maindata=[];
+let sortedData=[];
 let container=document.getElementById("container");
 // local Storage stores values
 let cartdata=JSON.parse(localStorage.getItem("cart"))||[];
 
 //page load Event Listener
 window.addEventListener("load",()=>{
-    renderdata(blanketURL)
+    renderdata(MensProductUrl)
 })
 
 //api fetch function
@@ -17,37 +18,44 @@ function renderdata(url){
         return response.json();
     })
     .then((data)=>{
-console.log(data)
+
         let mydata=data.map((element)=>{
             let  obj={
                 image:element.image,
-                name:`${element.name.substring(0,55)}`,
+                name:element.name,
                 brandName:element.brandName,
-                totalPrice:element.totalPrice,
-                discount:element.discount,
-                shippingDay:element.shipping,
-                discountPrice:Math.floor(element.totalPrice-element.totalPrice*(element.discount)/100),
+                totalPrice:+element.totalPrice,
+                discount:+element.discount,
+                shipping:element.shipping,
+                discountPrice:+element.totalPrice-(element.totalPrice*element.discount)/100,
                 id:element.id,
-    
                }
                return obj;
         })
-        console.log(mydata)
+        console.log(mydata);
+
+    let sortedArray=mydata.map((ele)=>{
+    return ele;
+    })
+
+    sortedData=sortedArray;
         //storing data to globally
         maindata=mydata;
+    
         //productCard function call
-        productCard(mydata)
-        
+        productCard(mydata)  
     })
     .catch((error)=>{
     console.log("error")
     })
     }
 
+
     // product card creation functionality
 
 function productCard(data){
     container.innerHTML=null;
+
     data.forEach((element,index)=>{
     
         let div=document.createElement("div");
@@ -80,18 +88,14 @@ function productCard(data){
                 localStorage.setItem("cart",JSON.stringify(cartdata));
                 BtnAdd.innerText="Added to Cart";
                 BtnAdd.style.backgroundColor="green"
-            
         }
-           
         })
 
         imgBtndiv.append(image,BtnAdd)
         
-        
-    
         let name=document.createElement("h2");
             name.setAttribute("class","name");
-           name.innerText=element.name;
+            name.innerText=element.name;
     
         let brandName=document.createElement("p");
             brandName.setAttribute("class","brandName");
@@ -103,7 +107,7 @@ function productCard(data){
     
         let discountPrice=document.createElement("p");
             discountPrice.setAttribute("class","discountPrice");
-            discountPrice.innerText=`₹ ${(Math.floor(element.totalPrice-element.totalPrice*(element.discount)/100))}`
+            discountPrice.innerText=`₹ ${(Math.floor(element.totalPrice-element.totalPrice*(element.discount)/100)).toLocaleString("en-US")}`
     
     
         let discount=document.createElement("p");
@@ -112,7 +116,7 @@ function productCard(data){
     
         let shippingDay=document.createElement("p");
             shippingDay.setAttribute("class","shippingDay");
-            shippingDay.innerText=`Ships in ${element.shippingDay} day`;
+            shippingDay.innerText=`Ships in ${element.shipping} day`;
     
         pricediv.append(discountPrice,totalPrice);
         div.append(imgBtndiv,name,brandName,pricediv,discount,shippingDay);
@@ -120,21 +124,29 @@ function productCard(data){
     })
     }
 
+     //sort by relevance
+     let radionButtonRelev=document.getElementById("relevance");   
+     radionButtonRelev.onclick=function(){
+    productCard(sortedData)
+     
+   }
 
-
-    // Highest Price First functionality
+      //Lowest Price First functionality
     let radioButtonHL=document.getElementById("LH");
+
     radioButtonHL.onclick=function(){
         sort(maindata)
+
         function sort(data){
             let sortdata=data.sort((a,b)=>{
-                return a.discountPrice-b.discountPrice;
+               return a.discountPrice-b.discountPrice;
             });
             productCard(sortdata)
         }
     }
 
-    //Lowest Price First functionality
+  
+    // Highest Price First functionality
     let radioButtonLH=document.getElementById("HL");
     radioButtonLH.onclick=function(){
         sort(maindata)
@@ -152,12 +164,14 @@ function productCard(data){
         sort(maindata)
         function sort(data){
             let sortdata=data.sort((a,b)=>{
-                return a.shippingDay-b.shippingDay;
+               return a.shipping-b.shipping;
             });
             productCard(sortdata)
         }
     }
 
+
+    //filter functionality
     var filterArray=[];
     var checkboxes=document.querySelectorAll(".brandName");
 
