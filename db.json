@@ -181,6 +181,312 @@
       "fabric": "Cotton",
       "style": " Regular Fit Polo T-shirt",
       "id": 10
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/12/JH/QY/NW/90086993/jokp-572maroon-1-16af40c3-6ad9-469c-be9b-3764780e97d5-1000x1000.jpg",
+      "name": "Men Maroon Self Design Kurta Only",
+      "brandName": "Manyavar",
+      "totalPrice": "1054",
+      "discount": "20",
+      "shipping": "2",
+      "color": "Maroon",
+      "size": "S",
+      "rating": {
+        "rated": "65",
+        "rating": "5"
+      },
+      "fabric": "Cotton",
+      "style": "Full Sleeves Kurta",
+      "id": 11
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/12/GW/JM/PO/90086993/f3185f71-msjckt60066-1-a6a4559e-9f06-41c1-b9b5-bad5b3ccd6c0-1000x1000.jpg",
+      "name": "Men's Black Washed Denim Jacket",
+      "brandName": "Men's Black Washed Denim Jacket",
+      "totalPrice": "1358",
+      "discount": "60",
+      "shipping": "2",
+      "color": "Black",
+      "size": "XXL",
+      "rating": {
+        "rated": "45",
+        "rating": "4"
+      },
+      "fabric": "Polyester",
+      "style": "Full sleeves",
+      "id": 12
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/OD/HM/QH/105112946/2802043342-500x500.jpg",
+      "name": "Hooded Denim Jacket",
+      "brandName": "aaa",
+      "totalPrice": "6079",
+      "discount": "40",
+      "shipping": "1",
+      "color": "Blue",
+      "size": "XL",
+      "rating": {
+        "rated": "325",
+        "rating": "4"
+      },
+      "fabric": "Cotton",
+      "style": "Hoody",
+      "id": 13
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/9/AP/SI/KD/70232485/waistcoatformen-3e1cb190-39ed-46be-b7e8-f5bf576773cb-1000x1000.jpg",
+      "name": "Wedding Mustard Yellow Solid Short Nehru Jacket",
+      "brandName": "Italian Crown",
+      "totalPrice": "1599",
+      "discount": "35",
+      "shipping": "1",
+      "color": "Yellow",
+      "size": "M",
+      "rating": {
+        "rated": "62",
+        "rating": "5"
+      },
+      "fabric": "Cotton",
+      "style": "Nehru Jacket",
+      "id": 14
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/AU/DU/GN/93561655/1a-06ec0847-fdef-4c41-8b1d-67957dab121e-1000x1000.jpg",
+      "name": "Men's Navy Blue & Orange Printed Nehru Jacket",
+      "brandName": "Banjara",
+      "totalPrice": "871",
+      "discount": "10",
+      "shipping": "2",
+      "color": "Navy Blue & Orange Printed",
+      "size": "XL",
+      "rating": {
+        "rated": "234",
+        "rating": "5"
+      },
+      "fabric": "Silk Blend",
+      "style": "Nahru Jacket",
+      "id": 15
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/AP/ZH/BW/70232485/waistcoatformen-32716c75-cc9c-4250-9413-41ef580bf110-1000x1000.jpg",
+      "name": "Elegant Solid Black Sleeveless V Neck Waistcoat",
+      "brandName": "talian Crown",
+      "totalPrice": "1599",
+      "discount": "30",
+      "shipping": "4",
+      "color": "Black",
+      "size": "L",
+      "rating": {
+        "rated": "123",
+        "rating": "4"
+      },
+      "fabric": "Linen",
+      "style": "Waistcoat",
+      "id": 16
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/12/AA/MC/EW/9187030/trackpants-cliths-grey-solid-cotton-sportswear-lower-for-men-4177924489282-1000x1000.jpg",
+      "name": "Cliths Grey Solid Cotton Sportswear Lower For Men",
+      "brandName": "Madhuram Enterprises",
+      "totalPrice": "399",
+      "discount": "5",
+      "shipping": "2",
+      "color": "Grey",
+      "size": "XL",
+      "rating": {
+        "rated": "12",
+        "rating": "5"
+      },
+      "fabric": "Cotton",
+      "style": "Sportwear pant",
+      "id": 17
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/7/AK/TB/LX/105112946/till-1000x1000.jpg",
+      "name": "Fz Forza Till Men's T-shirt | Kibi Sports",
+      "brandName": "Kibi Sports Private Limited",
+      "totalPrice": "599",
+      "discount": "10",
+      "shipping": "2",
+      "color": "Green ",
+      "size": "XXL",
+      "rating": {
+        "rated": "242",
+        "rating": "5"
+      },
+      "fabric": "Polyester",
+      "style": "T-shirt",
+      "id": 18
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/AL/AH/UN/13078142/1f9a1e6b-3ea5-4555-abce-53d84c37f14c-6583221-originnm80prcnt-1000x1000.webp",
+      "name": "Faricon Men's Cotton Regular Fit Casual T-shirt (white::black)",
+      "brandName": "Store Apt",
+      "totalPrice": "599",
+      "discount": "20",
+      "shipping": "4",
+      "color": "White & Black",
+      "size": "M",
+      "rating": {
+        "rated": "105",
+        "rating": "4"
+      },
+      "fabric": "Cotton",
+      "style": "Full sleeves T-shirt",
+      "id": 19
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/JZ/BQ/WD/50433867/1630598332727-whatsapp-image-2021-09-02-at-21-27-45-4-originnm80prcnt-1000x1000.jpg",
+      "name": "Men's Polycotton Polo Collar T-shirt",
+      "brandName": "Abyalife",
+      "totalPrice": "334",
+      "discount": "5",
+      "shipping": "2",
+      "color": "White",
+      "size": "XL",
+      "rating": {
+        "rated": "98",
+        "rating": "5"
+      },
+      "fabric": "Polycotton",
+      "style": "Collar T-shirt",
+      "id": 20
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/QS/ZF/YA/114250560/s-29f5692b-4a52-4161-b500-e86afb4a0408-1000x1000.jpg",
+      "name": "Greenwich Black And Neon Blue Capri Pant For Men's",
+      "brandName": "SK Apparels",
+      "totalPrice": "559",
+      "discount": "20",
+      "shipping": "3",
+      "color": "Navy Blue",
+      "size": "S",
+      "rating": {
+        "rated": "120",
+        "rating": "5"
+      },
+      "fabric": "Cotton",
+      "style": "Capri Pant",
+      "id": 21
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/LJ/ZG/HM/114250560/f-fff6f30b-887f-4d7e-850c-63047da474ea-1000x1000.jpg",
+      "name": "Greenwich Men's Andhra Melange Shorts",
+      "brandName": "SK Apparels",
+      "totalPrice": "439",
+      "discount": "30",
+      "shipping": "4",
+      "color": "Grey",
+      "size": "XL",
+      "rating": {
+        "rated": "30",
+        "rating": "5"
+      },
+      "fabric": "Coton",
+      "style": "Sports short pant",
+      "id": 22
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/RB/WT/PT/50433867/1627901330336-black1-originnm80prcnt-1000x1000.jpg",
+      "name": "Cotton Cargo Pant",
+      "brandName": "Abyalife",
+      "totalPrice": "984",
+      "discount": "15",
+      "shipping": "2",
+      "color": "Black",
+      "size": "26",
+      "rating": {
+        "rated": "68",
+        "rating": "5"
+      },
+      "fabric": "Cotton",
+      "style": "Cargo Pant",
+      "id": 23
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/7/OV/XS/FL/4120003/1615362361487-whatsapp-image-2021-03-06-at-18-01-58-1-originnm80prcnt-1000x1000.jpg",
+      "name": "Men'S Solid Mid Rise Formal Trouser",
+      "brandName": "Ramshiv Exports",
+      "totalPrice": "1024",
+      "discount": "40",
+      "shipping": "5",
+      "color": "Grey",
+      "size": "36",
+      "rating": {
+        "rated": "124",
+        "rating": "5"
+      },
+      "fabric": "Polycotton",
+      "style": "Formal trouser pant",
+      "id": 24
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/1/NU/SS/YZ/13078142/1633958368500-1633958126096-47-26-fo8lgrey3-xlgn400x400-originnm80prcnt-1000x1000.jpg",
+      "name": "Stylish Cotton Blend Grey Solid Mid-rise Stretchable Formal Trousers",
+      "brandName": "Store Apt",
+      "totalPrice": "729",
+      "discount": "25",
+      "shipping": "2",
+      "color": "White",
+      "size": "32",
+      "rating": {
+        "rated": "324",
+        "rating": "5"
+      },
+      "fabric": "Cotton",
+      "style": "Formal trouser pant",
+      "id": 25
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2023/2/XW/RM/EJ/37146732/3s-m-1023-1000x1000.jpg",
+      "name": "Eye-catching Round Neck Half Sleeve T-shirt With Print",
+      "brandName": "Nirmala Tex",
+      "totalPrice": "249",
+      "discount": "5",
+      "shipping": "2",
+      "color": "Black",
+      "size": "XL",
+      "rating": {
+        "rated": "36",
+        "rating": "5"
+      },
+      "fabric": "Cotton",
+      "style": "T-shirt",
+      "id": 26
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/2/AN/IR/SQ/5444595/7-231d2f31-70aa-4e82-9748-34e1026ae87b-1000x1000.jpg",
+      "name": "Brown Checkered Cotton Shirt",
+      "brandName": "Guniaa",
+      "totalPrice": "999",
+      "discount": "30",
+      "shipping": "2",
+      "color": "Multicolor",
+      "size": "XL",
+      "rating": {
+        "rated": "41",
+        "rating": "5"
+      },
+      "fabric": "Coton",
+      "style": "shirt",
+      "id": 27
+    },
+    {
+      "image": "https://5.imimg.com/data5/ECOM/Default/2022/11/US/ZY/HZ/4120003/1572424019623-kjvfyt7-originnm80prcnt-1000x1000.jpg",
+      "name": "Men's Grey Cotton Long Sleeves Regular Fit Casual Shirts",
+      "brandName": "Ramshiv Exports",
+      "totalPrice": "1064",
+      "discount": "35",
+      "shipping": "3",
+      "color": "Grey",
+      "size": "M",
+      "rating": {
+        "rated": "79",
+        "rating": "5"
+      },
+      "fabric": "Cotton",
+      "style": "shirt",
+      "id": 28
     }
   ],
   "footwear": [

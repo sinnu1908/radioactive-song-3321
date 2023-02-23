@@ -1,0 +1,317 @@
+/* ==================== ROOT VARIBLES */
+:root {
+    --color-black: #000000;
+    --color-white: #ffffff;
+  
+    --color-primary: #2e3192;
+    --color-orange: #f9af23;
+    --color-orange-1: #f58013;
+  
+    --color-price: #008000;
+    --color-info-light: #808080;
+  
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+  
+    --padding-1: 1rem;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Manrope', sans-serif;
+    color:#121212;
+  }
+  
+  /* ====================== navbar */
+  
+  #navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    position: fixed;
+    background: var(--color-white);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+  
+  #logo {
+    width: 20%;
+  }
+  
+  #logo > a {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  #logo > a > img {
+    width: 100%;
+  }
+  
+  #logo > a > h1  {
+    color: var(--color-orange-1);
+    font-family:Impact;
+  }
+  
+  #logo > a > h1 > span {
+    color: var(--color-black);
+    font-family:Impact;
+  }
+  
+  #search {
+    width: 50%;
+  }
+  
+  #search > input {
+    width: 80%;
+    border-radius: var(--border-radius-1);
+    border: 0;
+    padding: var(--padding-1);
+  box-shadow: rgba(0, 0, 0, 1) 0px 1px 3px 0px, rgba(27, 31, 35, 0.1) 0px 0px 0px 3px;
+    font-size: larger;
+    opacity: .5;
+  }
+  #search > button {
+    border-radius: var(--border-radius-1);
+    border: 0;
+    padding: var(--padding-1);
+    /* background-color: #2A6462; */
+    background : var(--color-orange-1);
+    color: var(--color-white);
+    font-size: larger;
+    cursor: pointer;
+  }
+  
+  #bulkRequirement {
+    padding: 25px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-1);
+  }
+  
+  /* ====================== See results about */
+  
+  
+  
+  main {
+    padding: 80px 20px 0 20px;
+  }
+  
+  main > p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: var(--color-info-light);
+  }
+  
+  main > p > b {
+    color: var(--color-black);
+  }
+  
+  main > button {
+    margin-top: 1rem;
+    padding: 5px 10px;
+    border-radius: var(--card-border-radius);
+    background: var(--color-white);
+    color: var(--color-orange-1);
+    border-color: var(--color-orange-1);
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  
+  .fillterBtn:hover {
+    background: var(--color-orange-1);
+    color: var(--color-white);
+  }
+  
+  /* ====================== mainCont */
+  
+  #main{
+    display:flex;
+    width:90%;
+    margin:auto;
+    justify-content: space-between;
+  
+  }
+  
+  #functionality{
+  
+  width:18%;
+  }
+  
+  /* container css */
+  #container{
+    width:80%;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+    
+    font-weight: 500;
+  }
+  
+  #container>div .image{
+  width:100%;
+  height:300px;
+  }
+  
+  /* imgBtn CSS */
+  #container .imgBtndiv{
+    position:relative;
+  }
+  
+  #container .BtnAdd{
+    border-style: none;
+    padding:7px 12px;
+    font-size: 14px;
+    background-color: #FF7035;
+    color:#FFFFFF;
+    position:absolute;
+    left:33%;
+    bottom:0;
+    opacity:0;
+    transition:1s;
+  
+  }
+  #container .imgBtndiv:hover .BtnAdd{
+    bottom:12%;
+    opacity:1;
+  }
+  #container .BtnAdd{
+    cursor:pointer;
+  }
+  
+  #container .image{
+    width:100%;
+    margin:0 0 8px;
+  
+  }
+  
+  
+  #container>div .name{
+    font-size: 15px; 
+    color:black; 
+    font-weight: 400;
+    margin:0 0 4px;
+    
+  }
+  
+  #container>div .brandName{
+    font-size:14px;
+    color:#848484;
+  }
+  
+  #price{
+    display:flex;
+    height:40px;
+    align-items: center;
+    
+  }
+  
+  #price .discountPrice{
+    font-size: 16px;
+    color:#FF7035;
+    margin-right:8px;
+    font-weight: bolder;
+  }
+  
+  #price .totalPrice{
+    color:#848484;
+    font-size:12px;
+    text-decoration-line: line-through;
+  }
+  
+  #container .discount{
+    font-size: 14px;
+    color:#67AD5B;
+    font-weight: bold;
+    margin:0 0 8px;
+  }
+  #container .shippingDay{
+    font-size:12px;
+    color:#121212;
+  }
+  
+  .sorting{
+    font-size: 16px;
+    color:#121212;
+  }
+  .sorting>h2,.filter>h2{
+    font-size: 16px;
+  }
+  .sorting>input[type=radio]{
+  background-color: red;
+    height:18px;
+    width:16px;
+    margin-right:5px;
+    
+  }
+  
+  
+  
+  
+  /* #mainCont {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+  
+  #mainCont > div  {
+    width: 100%; */
+  
+    /* height: 100%;
+    border-radius: var(--border-radius-3);
+    cursor: pointer;
+    border: 1px solid red
+  }
+  
+  #mainCont > div > div {
+    width: 100%;
+    height: 50%;
+  }
+  
+  #mainCont > div  > div > img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #mainCont > div  > button {
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    opacity: 1;
+    cursor: pointer;
+    border: 0;
+    background: var(--color-orange-1);
+    color: var(--color-white);
+    font-size: ;
+  }
+  
+  #mainCont > div  > p:nth-child(3) {
+    margin-top: 10px;
+  }
+  
+  #mainCont > div  > p:nth-child(4) {
+    margin-top: 10px;
+    color: var(--color-info-light);
+    font-size: 0.8rem;
+  }
+  
+  #mainCont > div  > h2:nth-child(5) {
+    margin-top: 10px;
+    color: var(--color-orange-1);
+  }
+  
+  #mainCont > div  > p:nth-child(6) {
+    margin-top: 10px;
+    color: var(--color-price);
+  } */
+  
