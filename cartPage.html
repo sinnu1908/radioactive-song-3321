@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        body{
+            background-color: #EEEEEE;
+        }
+        #nav{
+            display: flex;
+            height: 120px;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-bottom: 30px;
+            background-color: white;
+        }
+        #track{
+            display: flex;
+            margin: auto;
+            align-items: center;
+        }
+        #track > button{
+            margin-right: 10px;
+            height: 30px;
+            border-radius: 5px;
+        }
+        #track > p{
+            margin-right: 10px;
+        }
+        #nav > img{
+            width: 120px;
+            height: 120px;
+            border: 1px solid black;
+            border: none;
+        }
+        .images{
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        #main-cart{
+            width: 80%;
+            display: flex;
+            margin: auto;
+
+        }
+        .incrementBtn{
+            border-radius: 2px;
+            background-color: green;
+            color: white;
+            height: 25px;
+            width: 25px;
+            border: none;
+            margin-right: 5px;
+        }
+        .quantity{
+            font-size: 22px;
+        }
+        .decrementBtn{
+            border-radius: 2px;
+            background-color: #f58013;
+            color: white;
+            height: 25px;
+            width: 25px;
+            border: none;
+            margin-left: 5px;
+        }
+        .container2{
+            width: 35%;
+            /* height: 800px; */
+            /* background-color: white; */
+            margin-left: 10%;
+            /* margin: auto; */
+            border-radius: 20px;
+        }
+        #container2 > div{
+            /* width: 40%; */
+            margin-left: 10%;
+            margin-bottom: 20px;
+        }
+        #check{
+            width: 70px;
+            height: 40px;
+            background-color: #f58013;
+            border: none;
+            border-radius: 5px;
+        }
+        #check:hover{
+            background-color: #f9af23;
+        }
+        input{
+            width: 60%;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            margin-left: 7%;
+            margin-top: 20px;
+        }
+        #applyCoupon > button{
+            width: 80%;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: #f58013;
+            margin-left: 10%;
+        }
+        #proceedToPay > button{
+            width: 80%;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: #f58013;
+            margin-left: 10%;
+            margin-bottom: 20px;
+        }
+        .container2 > div > button{
+            width: 70%;
+            height: 50px;
+            margin: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: #4DD0E1;
+            font-size: 20px;
+        }
+        /* .container2 > div > button:hover{
+            background-color: #00BCD4;
+        } */
+        .container2 > div{
+            font-size: 20px;
+        }
+        #container1{
+            width: 60%;
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+            background-color: white;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            border: 3px solid black;
+            padding: 20px 0px 20px 20px;
+        }
+        .productCont{
+            border: 1px solid black;
+        }
+        .firstDiv{
+            /* border: 1px solid red; */
+            margin-bottom: 30px;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+        .middleDiv{
+            /* border: 1px solid red; */
+            margin-bottom: 30px;
+            /* padding-left: 20px; */
+        }
+        .orangePrice{
+            color: #f58013;
+        }
+        .greenDiscount{
+            color: green;
+        }
+        .lastDiv{
+            /* border: 1px solid red; */
+            margin-bottom: 30px;
+        }
+        .remBtn{
+            margin-top: 20px;
+            border: 1px solid black;
+            margin-left: 30px;
+            /* background-color: grey; */
+            color: black;
+            /* border: none; */
+            background-color: #EF5350;
+            border-radius: 3px;
+            font-size: 15px;
+        }
+        .remBtn:hover{
+            background-color: #B71C1C;
+            color: white;
+        }
+        #container1 > div > img{
+            width: 100%;
+        }
+        #footer{
+            margin-top: 10px;
+            background-color: white;
+        }
+        #innerCont1{
+            background-color: white;
+            margin-bottom: 30px;
+            border-radius: 20px;
+        }
+        #innerCont2{
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px 20px;
+        }
+        #innerCont2 > div{
+            margin-bottom: 20px;
+        }
+        #div1{
+            display: flex;
+            justify-content: space-between;
+            color: #f58013;
+        }
+        #div2{
+            display: flex;
+            justify-content: space-between;
+            color: green;
+        }
+        #div3{
+            display: flex;
+            justify-content: space-between;
+            color: green;
+            
+        }
+        #div4{
+            display: flex;
+            justify-content: space-between;
+            color: #f58013;
+            
+        }
+        #totalDiscount{
+            color: #4CAF50;
+        }
+        #green{
+            color: #4CAF50;
+        }
+        #image{
+            cursor: pointer
+        }
+        #track > button{
+            background-color: #EEEEEE;
+        }
+        #back{
+            margin-right: 10%;
+            background-color: #4DD0E1;
+            border-radius: 3px;
+        }
+        #footer{
+        margin-top: 102px;
+        margin-bottom: 10px;
+        } 
+
+        /* small screen */
+        @media only screen and (max-width: 600px){
+
+            #nav{
+                width: 100%;
+                display: flex;
+                height: 120px;
+                align-items: center;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                margin-bottom: 30px;
+                background-color: white;
+            }
+
+            #main-cart{
+            /* width: 100%; */
+            display: flex;
+            margin: auto;
+            flex-direction: column;
+            
+        }
+        #container1{
+            margin: auto;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        #container1 > img{
+            width: 200px;
+            height: 200px;
+        }
+        .container2{
+            margin: auto;
+            width: 300px;
+        }
+        #innerCont1{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+        #check{
+            width: 100px;
+            height: 40px;
+            background-color: #f58013;
+            border: none;
+            border-radius: 5px;
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #pinInput{
+            display: block;
+            margin: auto;
+        }
+        .remBtn{
+            margin-top: 20px;
+            margin-left: 30px;
+            background-color: #FAFAFA;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            color: black;
+        }
+        
+        } 
+        
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <img id="image" src="./PharMKart Logo.png" alt="">
+        <div id="track">
+            
+            <button class="cart">Cart</button>
+            <p>----</p>
+            <button class="address">Address</button>
+            <p>----</p>
+            <button class="payment">Payment</button>
+        </div>
+        <button id="back">Back</button>
+    </div>
+
+    <div id="main-cart">
+        <div id="container1"></div>
+
+
+        <div class="container2">
+            <div id="innerCont1">
+                <div>
+                    <input id="pinInput" placeholder="Enter your Pincode" type="number">
+                    <button id="check">Check</button>
+                </div>
+    
+                <div id="applyCoupon">
+                    <button>Apply Coupon</button>
+                </div>
+    
+                <div id="proceedToPay">
+                    <button>Proceed to Pay <span id="total"></span></button>
+                </div>
+            </div>
+            <div id="innerCont2">
+                <div>
+                    <h2>Order Summary : <span id="count"> </span> items</h2>
+                </div>
+
+                <div id="div1">
+                    <div>Total MRP</div>
+                    <div><span id="MRP"></span></div>
+                </div>
+
+                <div id="div2">
+                    <div>Total Discount</div>
+                    <div><span id="totalDiscount"></span></div>
+                </div>
+
+                <div id="div3">
+                    <div>Shipping Charges</div>
+                    <div id="shippingCharges">FREE</div>
+                </div>
+
+                <div id="div4">
+                    <div>Payable Amount</div>
+                    <div id="payableAmount">FREE</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="cartPage.js"></script>
+</html>
