@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <style>
+        body{
+            background-color: #EEEEEE;
+        }
+        #nav{
+            display: flex;
+            height: 120px;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-bottom: 30px;
+            background-color: white;
+        }
+        #nav > img{
+            width: 120px;
+            height: 120px;
+            border: 1px solid black;
+            border: none;
+        }#track{
+            display: flex;
+            margin: auto;
+            align-items: center;
+        }
+        #track > button{
+            margin-right: 10px;
+            height: 30px;
+            border-radius: 5px;
+        }
+        #track > p{
+            margin-right: 10px;
+        }
+        #footer{
+            margin-top: 10px;
+            background-color: white;
+        }
+        #main-container{
+            width: 80%;
+            display: flex;
+            /* border: 1px solid red; */
+            margin: auto;
+        }
+        .container1{
+            width: 60%;
+           /* border: 1px solid black;  */
+           background-color: white;
+           border-radius: 20px;
+        }
+        #div1 {
+            display: flex;
+            justify-content: space-around;
+        }
+        #div1 > div{
+            width: 40%;
+        }
+        #div1 > div > input{
+            height: 40px;
+            font-size: 20px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        #div2{
+            margin-left: 5%;
+        }
+        #div2 > input{
+            height: 40px;
+            font-size: 20px;
+            width: 80%;
+            border-radius: 5px;
+        }
+        #div3 {
+            display: flex;
+            justify-content: space-around;
+        }
+        #div3 > div{
+            width: 40%;
+        }
+        #div3 > div > input{
+            height: 40px;
+            font-size: 20px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        #div4{
+            margin-left: 5%;
+        }
+        #div4 > button{
+            height: 30px;
+            font-size: 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #E0E0E0;
+            margin-bottom: 20px;
+        }
+        #submit{
+            width: 60%;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: #f58013;
+            display: block;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .container2{
+            width: 35%;
+            /* height: 800px; */
+            /* background-color: white; */
+            border-radius: 20px;
+        }
+        #innerCont2{
+            width: 100%;
+            background-color: white;
+            border-radius: 20px;
+            margin-left: 5%;
+            justify-content: space-between;
+            padding: 20px 20px;
+        }
+        #innerCont2 > div{
+            font-size: 20px;
+            margin-bottom: 20px;
+        } #innerCont2{
+            /* border: 1px solid red; */
+            background-color: white;
+            border-radius: 20px;
+        }
+        #innerCont2 > div{
+            margin-bottom: 20px;
+        }
+        #Div1{
+            display: flex;
+            justify-content: space-between;
+            color: #f58013;
+        }
+        #Div2{
+            display: flex;
+            justify-content: space-between;
+            color: green;
+        }
+        #Div3{
+            display: flex;
+            justify-content: space-between;
+            color: green;
+        }
+        #Div4{
+            display: flex;
+            justify-content: space-between;
+            color: #f58013;
+        }
+        #back{
+            margin-right: 10%;
+            background-color: #f58013;
+            border-radius: 3px;
+            font-size: 18px;
+        }
+        #image{
+            cursor: pointer
+        }
+
+        @media only screen and (max-width: 600px){
+
+            #main-container{
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+            }
+            .container1{
+                width: 400px;
+                margin: auto;
+            }
+            .container2{
+                width: 300px;
+                margin: auto;
+                margin-right: 100px;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <img id="image" src="./PharMKart Logo.png" alt="">
+        <div id="track">
+            
+            <button class="cart">Cart</button>
+            <p>----</p>
+            <button class="address">Address</button>
+            <p>----</p>
+            <button class="payment">Payment</button>
+        </div>
+        <button id="back">Back</button>
+    </div>
+
+    <div id="main-container">
+        <div class="container1">
+            
+            <form>
+                <div id="div1">
+                    <div>
+                        <p>Name*</p>
+                        <input id="name" type="text" placeholder="Enter Full name">
+                    </div>
+                    <div>
+                        <p>Mobile No.*</p>
+                        <input id="mobNo" type="number" placeholder="Enter 10 digit no.">
+                    </div>
+                </div>
+        
+                <div id="div2">
+                    <p>Address(Area & Street)*</p>
+                    <input id="address" type="text" placeholder="Type Your Address">
+                </div>
+        
+                <div id="div3">
+                    <div>
+                        <p>Landmark</p>
+                        <input id="landmark" type="text" placeholder="Type Your Address">
+                    </div>
+                    <div>
+                        <p>Pincode*</p>
+                        <input id="pincode" type="number" placeholder="Type Your Address">
+                    </div>
+                </div>
+    
+                <div id="div4">
+                    <p>Address Type</p>
+                    <button>Home</button>
+                    <button>Office</button>
+                    <button>Others</button>
+                </div>
+    
+                <input id="submit" type="submit" value="Save & Deliver">
+            </form>
+        </div>
+        <div class="container2">
+            
+            <div id="innerCont2">
+                <div>
+                    <h2>Order Summary : <span id="count"> </span> items</h2>
+                </div>
+
+
+                <div id="Div1">
+                    <div>Total MRP</div>
+                    <div><span id="MRP"></span></div>
+                </div>
+
+                <div id="Div2">
+                    <div>Total Discount</div>
+                    <div><span id="totalDiscount"></span></div>
+                </div>
+
+                <div id="Div3">
+                    <div>Shipping Charges</div>
+                    <div id="green">FREE</div>
+                </div>
+
+                <div id="Div4">
+                    <div>Payable Amount</div>
+                    <div id="payableAmount"></div>
+                </div>
+
+
+            </div>
+        </div>
+</div>
+</body>
+<script src="address.js"></script>
+</html>

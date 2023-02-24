@@ -84,7 +84,7 @@ function productCard(data){
         if(AlreadyP==true){
              alert("Already Present in the Cart")
         }else{
-            cartdata.push(element)
+            cartdata.push({...element,quantity:1})
                 localStorage.setItem("cart",JSON.stringify(cartdata));
                 BtnAdd.innerText="Added to Cart";
                 BtnAdd.style.backgroundColor="green"
