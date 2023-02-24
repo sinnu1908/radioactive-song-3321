@@ -6,7 +6,7 @@
   --color-primary: #2e3192;
   --color-orange: #f9af23;
   --color-orange-1: #f58013;
-    --color-danger: #ff0000;
+  --color-danger: #ff0000;
 
   --color-price: #008000;
   --color-info-light: #7d8da1;
@@ -35,8 +35,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
-  position: fixed;
 }
 #loginCont {
   width: 60%;
@@ -55,7 +53,7 @@
   border: 0;
   padding: 50px;
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-  rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   display: block;
 }
 #firstLoginDiv > div:nth-child(1) {
@@ -89,7 +87,7 @@ img {
   justify-content: space-around;
   box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px, rgba(0, 0, 0, 0.3) 0px 1px 2px;
   border-radius: 5px;
-  background:  var(--color-danger);
+  background: var(--color-danger);
   color: var(--color-white);
 }
 #danger > p {
@@ -142,4 +140,45 @@ img {
 }
 #image > img {
   width: 100%;
+}
+
+/* ====================== media tap query */
+
+@media screen and (min-width: 451px) and (max-width: 800px) {
+  * {
+    font-size: 1rem;
+  }
+  #loginCont {
+    width: 50%;
+  }
+  #firstLoginDiv {
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding: 50px;
+    box-shadow: none;
+  }
+  #secondLoginDiv {
+    display: none;
+  }
+}
+/* ====================== media mobile query */
+
+@media screen and (max-width: 450px) {
+  * {
+    font-size: 1rem;
+  }
+  #loginCont {
+    width: 90%;
+  }
+  #firstLoginDiv {
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding: 50px;
+    box-shadow: none;
+  }
+  #secondLoginDiv {
+    display: none;
+  }
 }
