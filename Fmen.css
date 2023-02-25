@@ -142,11 +142,6 @@ main > button {
 
 }
 
-#functionality{
-
-width:18%;
-}
-
 /* container css */
 #container{
   width:80%;
@@ -239,20 +234,15 @@ height:300px;
   color:#121212;
 }
 
-.sorting{
-  font-size: 16px;
-  color:#121212;
+#main .sorting{
+  position:fixed;
 }
-.sorting>h2,.filter>h2{
-  font-size: 16px;
+#main .filter{
+  position:fixed;
+  top:200px;
 }
-.sorting>input[type=radio]{
-background-color: red;
-  height:18px;
-  width:16px;
-  margin-right:5px;
-  
-}
+
+
 
 
 

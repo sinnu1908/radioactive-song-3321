@@ -176,32 +176,227 @@ function productCard(data){
     var checkboxes=document.querySelectorAll(".brandName");
 
     for(var checkbox of checkboxes){
-        checkbox.addEventListener("click",function(){
-          
-            if(this.checked==true){
-                maindata.forEach((element)=>{
-                    if(element.brandName==this.value){
-                        filterArray.push(element)
-                    }
-                })
 
-            }else{
-                filterArray=filterArray.filter((elem)=>{
-                    if(elem.brandName!==this.value){
-                        return true;
-                    }
-                })   
-            }
-            if(filterArray.length==0){
-                productCard(maindata);
-            }else{
-                productCard(filterArray)
-            }
+        checkbox.addEventListener("click",function(){
+
+        if(this.checked==true){
+        maindata.forEach((element)=>{
+
+        if(element.brandName==this.value){
+        filterArray.push(element)
+        }
 
         })
+
+        }
+        else
+        {
+        filterArray=filterArray.filter((elem)=>{
+
+        if(elem.brandName!==this.value){
+        return true;
+        }
+
+        }) 
+        
+        }
+        if(filterArray.length==0){
+                productCard(maindata);
+        }else{
+            productCard(filterArray)
+        }
+
+    })
     
     }
 
+let discountArray=[];
+let discountLessThanTen=document.getElementById("discountlessthanTen");
+
+let dtArray=[];
+discountLessThanTen.addEventListener("click",function(){
+
+    if(this.checked==true){
+         
+        if(filterArray.length==0){
+           maindata.forEach((element)=>{
+            if(element.discount<10){
+             dtArray.push(element)
+            }
+           })
+        }else if(filterArray.length>0){
+            filterArray.forEach((elem)=>{
+                if(elem.discount<10){
+                    dtArray.push(elem)
+                }
+            })
+        }
+        console.log(dtArray)
+    }else{
+        dtArray=dtArray.filter((item)=>{
+            if(item.discount<10){
+                return false;
+            }else{
+                return true;
+            }
+        })
+    }
+console.log(dtArray)
+    if(filterArray.length==0 && dtArray.length==0){
+        productCard(maindata)
+    }else if(dtArray.length==0){
+        productCard(filterArray)
+    }else{
+        productCard(dtArray)
+    }
+})
+
+//10-30% discount
+let discountTentoThirty=document.getElementById("discountTentoThirty");
+
+discountTentoThirty.addEventListener("click",function(){
+console.log("okk")
+    if(this.checked==true){
+         
+        if(filterArray.length==0){
+           maindata.forEach((element)=>{
+            if(element.discount>10 && element.discount<=30){
+             dtArray.push(element)
+            }
+           })
+        }else if(filterArray.length>0){
+            filterArray.forEach((elem)=>{
+                if(elem.discount>10 && elem.discount<=30){
+                    dtArray.push(elem)
+                }
+            })
+        }
+    }else{
+        dtArray=dtArray.filter((item)=>{
+            if(item.discount>10 && item.discount<=30){
+                return false;
+            }else{
+                return true;
+            }
+        })
+    }
+
+    if(filterArray.length==0 && dtArray.length==0){
+        productCard(maindata)
+    }else if(dtArray.length==0){
+        productCard(filterArray)
+    }else{
+        productCard(dtArray)
+    }
+})
+
+//30-50% discount
+let discountThirtyOnetoFifty=document.getElementById("discountThirtyOnetoFifty");
+
+discountThirtyOnetoFifty.addEventListener("click",function(){
+    console.log("okk")
+        if(this.checked==true){
+             
+            if(filterArray.length==0){
+               maindata.forEach((element)=>{
+                if(element.discount>30 && element.discount<=50){
+                 dtArray.push(element)
+                }
+               })
+            }else if(filterArray.length>0){
+                filterArray.forEach((elem)=>{
+                    if(elem.discount>30 && elem.discount<=50){
+                        dtArray.push(elem)
+                    }
+                })
+            }
+        }else{
+            dtArray=dtArray.filter((item)=>{
+                if(item.discount>30 && item.discount<=50){
+                    return false;
+                }else{
+                    return true;
+                }
+            })
+        }
+    
+        if(filterArray.length==0 && dtArray.length==0){
+            productCard(maindata)
+        }else if(dtArray.length==0){
+            productCard(filterArray)
+        }else{
+            productCard(dtArray)
+        }
+    })
+    
+    let discountMorethanFifty=document.getElementById("discountMorethanFifty");
+
+    discountMorethanFifty.addEventListener("click",function(){
+    console.log("okk")
+        if(this.checked==true){
+             
+            if(filterArray.length==0){
+               maindata.forEach((element)=>{
+                if(element.discount>50){
+                 dtArray.push(element)
+                }
+               })
+            }else if(filterArray.length>0){
+                filterArray.forEach((elem)=>{
+                    if(elem.discount>50){
+                        dtArray.push(elem)
+                    }
+                })
+            }
+        }else{
+            dtArray=dtArray.filter((item)=>{
+                if(item.discount>50){
+                    return false;
+                }else{
+                    return true;
+                }
+            })
+        }
+    
+        if(filterArray.length==0 && dtArray.length==0){
+            productCard(maindata)
+        }else if(dtArray.length==0){
+            productCard(filterArray)
+        }else{
+            productCard(dtArray)
+        }
+    })
+
+
+
+
+//     maindata.forEach((element)=>{
+
+//     if(element.brandName==this.value){
+//     filterArray.push(element)
+//     }
+
+//     })
+
+//     }
+//     else
+//     {
+//     filterArray=filterArray.filter((elem)=>{
+
+//     if(elem.brandName!==this.value){
+//     return true;
+//     }
+
+//     }) 
+    
+//     }
+//     if(filterArray.length==0){
+//             productCard(maindata);
+//     }else{
+//         productCard(filterArray)
+//     }
+
+// })
 
 
 
