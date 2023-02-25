@@ -18,6 +18,10 @@ let Cart = JSON.parse(localStorage.getItem("cart"))||[];
 
 let container1 = document.getElementById("container1");
 
+let proCount = 0
+for(let i=0;i<Cart.length;i++){
+    proCount += Cart[i].quantity;
+}
 
 let totalmrp = detail[0].totalmrp;
 let totalDis = detail[0].totaldis;
@@ -30,7 +34,7 @@ totalDiscount.innerHTML = totalDis
 
 payableAmount.innerHTML = payAmount;
 
-countEl.innerText = ProductCount;
+countEl.innerText = proCount;
 
 
 

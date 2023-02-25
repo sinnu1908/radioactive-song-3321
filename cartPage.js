@@ -7,7 +7,6 @@
 //     })
 
 let Cart = JSON.parse(localStorage.getItem("cart"))||[];
-// console.log(Cart)
 
 let totalDiscount = document.getElementById("totalDiscount");
 
@@ -111,31 +110,30 @@ function DisplayData(data){
     sum+=Number(Cart[i].discountPrice)*Number(Cart[i].quantity);
     discount = (Number(Cart[i].totalPrice)-Number(Cart[i].discountPrice))*Number(Cart[i].quantity)
     discountSum += Math.ceil(discount);
-    // console.log(discountSum)
+  
     totalDiscount.innerHTML = `-₹${discountSum}`
     sum1 += Number(Cart[i].totalPrice)*Number(Cart[i].quantity)
   }
-  console.log(discountSum)
+ 
   
+  let payAmt = sum.toFixed(0)
+ 
 
    total.innerHTML = `₹${sum.toFixed(0)}`;
    
    MRP.innerHTML = `₹${sum1.toFixed(0)}`;
 
-   payableAmount.innerHTML = `₹${sum.toFixed(0)}`;
+   payableAmount.innerHTML = `₹${payAmt}`;
 
     let detail = []
     let obj = {
       totalmrp : `₹${sum1}`,
       totaldis : `-₹${discountSum}`,
-      payamount : `₹${sum}`
+      payamount : `₹${payAmt}`
     }
     detail.push(obj);
     localStorage.setItem("charges",JSON.stringify(detail))
 
-    // for(let i=0;i<Cart.length;i++){
-    //   numberOfPro += Cart[i].quantity 
-    // }
     countEl.innerText = numberOfPro
 
 }
