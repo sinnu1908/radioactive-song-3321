@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adminlogin</title>
+</head>
+<body>
+    
+    <form id="kk">
+        <input type="text" id="Username" placeholder="Username">
+        <input type="password" name="Password" id="password">
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+<script>
+    let formEle=document.querySelector("#kk")
+    let body=document.getElementsByTagName("body")
+    formEle.addEventListener("submit",(e)=>{
+       e.preventDefault()
+        let un =formEle.Username.value
+        let ps=formEle.password.value
+        console.log(un,ps)
+        if(un=="admin" && ps=="admin"){
+            console.log(un,ps)
+            window.location="./fadmin.html"
+        }
+    })
+   
+</script>
+</html>
