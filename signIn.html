@@ -15,19 +15,19 @@
         <!-- =========================== SignIn -->
         <div id="firstLoginDiv">
           <div>
-            <form action="">
+            <form action="" id="loginForm">
               <h1>Sign in</h1>
               <div id="danger">
-                <p>Incorrect Credentials</p>
+                <p></p>
               </div>
               <input
-                type="email"
+                type="text"
                 placeholder="Email or Phone Number"
                 id="email"
               />
               <input type="password" placeholder="Password" id="password" />
               <a href="">Forgot password?</a>
-              <a href="./index.html"><button>Sign in</button></a>
+              <input type="submit" id="submit" value="Sign in">
               <p>
                 Don't have account?<a href="signUp.html" id="signin"> Signup</a>
               </p>

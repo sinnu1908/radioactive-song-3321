@@ -3,30 +3,30 @@
   --color-black: #000000;
   --color-white: #ffffff;
 
-  --color-primary: #2e3192;
+  --color-navbar: #0f1111;
   --color-orange: #f9af23;
   --color-orange-1: #f58013;
 
-  --color-price: #008000;
-  --color-info-light: #808080;
+  --color-logo: #10a310;
+  --color-info-light: #7d8da1;
 
   --card-border-radius: 2rem;
-  --border-radius-1: 0.4rem;
+  --border-radius-1: 0.5rem;
 
-  --padding-1: 1rem;
+  --padding-1: 0.6rem;
 }
 
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
   box-sizing: border-box;
+  font-weight: normal;
+  font-family: Verdana;
 }
-
-body{
-  font-family: 'Manrope', sans-serif;
-  color:#121212;
+body::-webkit-scrollbar {
+  display: none;
 }
-
 /* ====================== navbar */
 
 #navbar {
@@ -35,9 +35,9 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px 0 20px;
+  padding: 0 25px 0 25px;
   position: fixed;
-  background: var(--color-white);
+  background: var(--color-navbar);
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
@@ -56,75 +56,46 @@ body{
   width: 100%;
 }
 
-#logo > a > h1  {
-  color: var(--color-orange-1);
-  font-family:Impact;
+#logo > a > h1 {
+  color: var(--color-orange);
+  font-family: Impact;
 }
 
 #logo > a > h1 > span {
-  color: var(--color-black);
-  font-family:Impact;
+  color: var(--color-white);
+  font-family: Impact;
 }
 
 #search {
-  width: 50%;
+  /* width: 25%; */
 }
 
 #search > input {
-  width: 80%;
+  /* width: 100%; */
   border-radius: var(--border-radius-1);
   border: 0;
   padding: var(--padding-1);
-box-shadow: rgba(0, 0, 0, 1) 0px 1px 3px 0px, rgba(27, 31, 35, 0.1) 0px 0px 0px 3px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.1) 0px 0px 0px 3px;
   font-size: larger;
-  opacity: .5;
+  color: var(--color-orange);
+}
+::-webkit-input-placeholder {
+  color: var(--color-orange);
 }
 #search > button {
   border-radius: var(--border-radius-1);
   border: 0;
   padding: var(--padding-1);
-  /* background-color: #2A6462; */
-  background : var(--color-orange-1);
+  background: var(--color-orange);
   color: var(--color-white);
   font-size: larger;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-#bulkRequirement {
-  padding: 25px;
-  background-color: var(--color-black);
-  color: var(--color-white);
-  padding: var(--padding-1);
+#side3 > a > img {
   border-radius: var(--border-radius-1);
-}
-
-/* ====================== See results about */
-
-
-
-main {
-  padding: 80px 20px 0 20px;
-}
-
-main > p {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  color: var(--color-info-light);
-}
-
-main > p > b {
-  color: var(--color-black);
-}
-
-main > button {
-  margin-top: 1rem;
-  padding: 5px 10px;
-  border-radius: var(--card-border-radius);
   background: var(--color-white);
-  color: var(--color-orange-1);
-  border-color: var(--color-orange-1);
-  font-weight: bolder;
-  cursor: pointer;
 }
 
 .fillterBtn:hover {
@@ -141,19 +112,15 @@ main > button {
   justify-content: space-between;
 
 }
-
-#functionality{
-
-width:18%;
+#container{
+  margin-top:90px;
 }
-
 /* container css */
 #container{
   width:80%;
   display:grid;
   grid-template-columns: repeat(4,1fr);
-  gap:20px;
-  
+  gap:40px;
   font-weight: 500;
 }
 
@@ -239,78 +206,39 @@ height:300px;
   color:#121212;
 }
 
-.sorting{
+#main .sorting{
+  position:fixed;
   font-size: 16px;
-  color:#121212;
+  top:90px;
 }
-.sorting>h2,.filter>h2{
-  font-size: 16px;
+
+#main .sorting>h3{
+margin-bottom: 16px;
+
 }
-.sorting>input[type=radio]{
-background-color: red;
-  height:18px;
-  width:16px;
+#main .sorting>input{
+  margin-bottom: 12px;
   margin-right:5px;
   
 }
-
-
-
-
-/* #mainCont {
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
-
-#mainCont > div  {
-  width: 100%; */
-
-  /* height: 100%;
-  border-radius: var(--border-radius-3);
+#main .sorting:hover, #main .sorting>input:hover{
   cursor: pointer;
-  border: 1px solid red
+}
+#main .filter{
+  position:fixed;
+  top:250px;
+  font-size: 16px;
 }
 
-#mainCont > div > div {
-  width: 100%;
-  height: 50%;
+#main .filter input{
+  margin-right:5px;
+  margin-bottom: 12px;
 }
 
-#mainCont > div  > div > img {
-  width: 100%;
-  height: 100%;
+#main .filter h5{
+  margin:8px 0px 12px 0px;
 }
 
-#mainCont > div  > button {
-  width: 100%;
-  padding: 10px;
-  position: relative;
-  opacity: 1;
-  cursor: pointer;
-  border: 0;
-  background: var(--color-orange-1);
-  color: var(--color-white);
-  font-size: ;
-}
 
-#mainCont > div  > p:nth-child(3) {
-  margin-top: 10px;
-}
 
-#mainCont > div  > p:nth-child(4) {
-  margin-top: 10px;
-  color: var(--color-info-light);
-  font-size: 0.8rem;
-}
 
-#mainCont > div  > h2:nth-child(5) {
-  margin-top: 10px;
-  color: var(--color-orange-1);
-}
-
-#mainCont > div  > p:nth-child(6) {
-  margin-top: 10px;
-  color: var(--color-price);
-} */
