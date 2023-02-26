@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Form</title>
+</head>
+<body>
+    <form id="fofo">
+      
+     <input type="text" name="ImageURL" id="image" placeholder="ImageURL">
+     <input type="text" name="Brand" id="brand" placeholder="Brand">
+     <input type="number" name="Price" id="price" placeholder="Price">
+     <input type="submit" value="Add">
+    </form>
+    
+</body>
+<script>
+    
+    let imageEle=document.querySelector("#image")
+    let BrandEle=document.querySelector("#brand")
+    let PriceEle=document.querySelector("#price")
+    
+    let formEle=document.querySelector("#fofo")
+    
+    
+    const fetchurl="https://drab-rose-sturgeon.cyclic.app/mensWear"
+    
+    formEle.addEventListener("submit",(e)=>{
+        e.preventDefault()
+    
+        let image=imageEle.value
+        let brand=BrandEle.value
+        let price=Number(PriceEle.value)
+        
+        
+        Addfmen(image,brand,price)
+        alert("item Added")
+        window.location.replace("./fadmin.html")
+    })
+
+
+    function Addfmen(image,brand,price){
+    console.log(image,brand,price)
+    fetch(`https://drab-rose-sturgeon.cyclic.app/mensWear`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+     brandName:brand,
+     image:image,
+     totalPrice:price
+    }) // body data type must match "Content-Type" header
+
+  });
+}
+
+
+</script>
+</html>

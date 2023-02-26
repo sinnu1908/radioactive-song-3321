@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinalAdmin</title>
+</head>
+<style> 
+#navbar{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    justify-content: space-between;
+    height: 60px;
+}
+#admin{
+    color: black;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 150px;
+    text-align: center;
+    height: 70%;
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+#logo{
+    display: flex;
+    
+}
+#logo>img{
+   display: inline-block;
+   width: 50px;
+   margin: 0px 10px 0px 10px;
+}
+#logo>h1{
+    color: #f9af23;
+    margin: 5px 10px 0px 10px;
+}
+#logo>h1>span{
+    color: white;
+}
+
+.firstimg{
+    border: 3px black solid;
+    display: flex;
+}
+.firstimg>a>img{
+    border: 3px black solid;
+    display: inline;
+    margin-top: 10px;
+}
+.log{
+    display: flex;
+}
+.log>div>a>img{
+    width: 40px;
+    border: 3px black solid;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+.nav{
+display: flex;
+justify-content: space-evenly;
+}
+
+.navimg>img{
+margin-left:  30px;
+
+width: 50px;
+border-radius: 10px;
+border: black 1px solid;
+}
+.navimg>p{
+font-size: 20px;
+
+}
+.buttonallmenfas{
+    display: flex;
+}
+.main{
+    display: flex;
+}
+.mainbody{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+.mainbody>div>img{
+    height: 400px;
+    width: 250px;
+}
+#getmen{
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px 10px 10px 10px;
+}
+#postmen{
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px 10px 10px 10px;
+}
+</style>
+<body>
+    <div id="navbar">
+        <div id="logo">
+          
+            <img src="./logo.png" alt="image not found" />
+            <h1>APNA<span>MART</span></h1>
+         
+        </div>
+        
+        <div id="admin">
+          Admin
+        </div>
+      </div>
+    <hr>
+    <div class="main">
+        <div class="buttonallmenfas">
+            <button id="getmen">GET MEN FASHION</button><br>
+            <button id="postmen">POST MEN FASHION</button><br>
+           
+           
+         </div>
+         
+    </div>
+    <div class="mainbody">
+    </div>
+    
+</body>
+<script>
+    const fetchurl="https://drab-rose-sturgeon.cyclic.app/mensWear"
+
+let GetbtnEle=document.getElementById("getmen")
+let PostbtnEle=document.getElementById("postmen")
+GetbtnEle.addEventListener("click",MenFetch)
+let bodydivEle=document.querySelector(".mainbody")
+PostbtnEle.addEventListener("click",(e)=>{
+    e.preventDefault()
+    window.location="./Addform.html"
+
+})
+
+
+
+    async function MenFetch(){
+        try {
+         let res=await fetch(fetchurl)
+         let data=await res.json()
+         console.log(data)
+         Display(data)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    function Display(data){
+        data.forEach((ele)=>{
+            let divele=document.createElement("div")
+            let brandh=document.createElement("h3")
+            brandh.innerText=ele.brandName
+            let img=document.createElement("img")
+            img.src=ele.image
+            img.style.width="100%"
+            let p=document.createElement("p")
+            p.innerText=ele.totalPrice
+            let Editbtn=document.createElement("button")
+            Editbtn.innerText="EDIT"
+            Editbtn.addEventListener("click",()=>{
+                let EditArr=[]
+                EditArr.push(ele)
+                localStorage.setItem("Edit",JSON.stringify(EditArr))
+                window.location="./EDITFORM.html"
+            })
+            let delbtn=document.createElement("button")
+            delbtn.innerText="DELETE"
+            delbtn.addEventListener("click",()=>{
+
+            })
+            divele.append(img,brandh,p,Editbtn,delbtn)
+
+            bodydivEle.append(divele)
+
+
+             
+
+
+
+
+
+        })
+        
+        
+
+
+
+
+    }
+
+</script>
+</html>
