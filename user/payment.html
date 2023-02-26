@@ -1,290 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment</title>
     <link rel="shortcut icon" type="x-icon" href="./imageFile/xxx.png" />
-    <style>
-         body{
-            background-color: #EEEEEE;
-        }
-        #nav{
-            display: flex;
-            height: 120px;
-            align-items: center;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            margin-bottom: 30px;
-            background-color: white;
-            padding-left: 7%;
-        }
-        #track{
-            display: flex;
-            margin: auto;
-            align-items: center;
-        }
-        #track > button{
-            margin-right: 10px;
-            height: 30px;
-            border-radius: 5px;
-        }
-        #track > p{
-            margin-right: 10px;
-        }
-        #nav > img{
-            width: 120px;
-            height: 120px;
-            border: 1px solid black;
-            border: none;
-        }
-        #main-container{
-            width: 60%;
-            display: flex;
-            margin: auto;
-        }
-        .container1{
-            width: 60%;
-        }
-        .adderssCont{
-            margin-bottom: 20px;
-            background-color: white;
-            border-radius: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;
-            border: 3px solid black;
-        }
-        #delivery{
-            display: flex;
-            justify-content: space-between;
-        }
-        form{
-            background-color: white;
-            border-radius: 20px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            border: 3px solid black;
-        }
-        #div1{
-            margin-left: 5%;
-        }
-        #name{
-            width: 80%;
-            height: 40px;
-            font-size: 17px;
-            border-radius: 5px;
-        }
-        #div2{
-            margin-left: 5%;
-        }
-        #cardNumber{
-            width: 80%;
-            height: 40px;
-            font-size: 17px;
-            border-radius: 5px;
-        }
-        #div3{
-            display: flex;
-            margin-left: 5%;
-        }
-        #div3{
-            margin-bottom: 20px;
-        }
-        #issue{
-            width: 80%;
-            height: 30px;
-            font-size: 17px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        #expiry{
-            width: 80%;
-            height: 30px;
-            font-size: 17px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        #pay{
-            width: 60%;
-            height: 50px;
-            margin-left: 20%;
-            font-size: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            background-color: #f58013;
-        }
-        #pay:hover{
-            background-color: #00BCD4;
-        }
-
-
-        .container2{
-            width: 35%;
-            /* height: 800px; */
-            /* background-color: white; */
-            border-radius: 20px;
-        }
-        #innerCont2{
-            width: 100%;
-            background-color: white;
-            border-radius: 20px;
-            margin-left: 5%;
-            justify-content: space-between;
-            padding: 20px 20px;
-            border: 3px solid black;
-        }
-        #innerCont2 > div{
-            font-size: 20px;
-            margin-bottom: 20px;
-        } #innerCont2{
-            /* border: 1px solid red; */
-            background-color: white;
-            border-radius: 20px;
-        }
-        #innerCont2 > div{
-            margin-bottom: 20px;
-        }
-        #Div1{
-            display: flex;
-            justify-content: space-between;
-            color: #f58013;
-        }
-        #Div2{
-            display: flex;
-            justify-content: space-between;
-            color: green;
-        }
-        #Div3{
-            display: flex;
-            justify-content: space-between;
-            color: green;
-        }
-        #Div4{
-            display: flex;
-            justify-content: space-between;
-            color: #f58013;
-        }
-        #footer{
-            background-color: white;
-        }
-        #change{
-            color: #f58013;
-            cursor: pointer;
-            margin-right: 10px;
-        }
-        #back{
-            margin-right: 10%;
-            background-color: #f58013;
-            border-radius: 3px;
-            font-size: 18px;
-        }
-        #image{
-            cursor: pointer
-        }
-        @media only screen and (max-width: 600px){
-
-            #main-container{
-                display: flex;
-                flex-direction: column;
-                /* width: 600px;
-                margin: auto; */
-            }
-            .container1{
-                width: 400px;
-            }
-            .container2{
-                width: 330px;
-                margin-top: 20px;
-                margin-bottom: 20px;
-            }
-        }
-    </style>
-</head>
-<body>
-
+    <link rel="stylesheet" href="./cssFile/payment.css" />
+  </head>
+  <body>
     <div id="nav">
-        <img id="image" src="./logo.png" alt="">
-        <div id="track">
-            
-            <button class="cart">Cart</button>
-            <p>----</p>
-            <button class="address">Address</button>
-            <p>----</p>
-            <button class="payment">Payment</button>
-        </div>
-        <button id="back">Back</button>
+      <!-- <img id="image" src="./logo.png" alt=""> -->
+      <!-- ================================ -->
+      <div id="logo">
+        <a href="./index.html">
+          <img src="./imageFile/logo.png" alt="image not found" />
+          <h1>APNA<span>MART</span></h1>
+        </a>
+      </div>
+      <!-- ================================ -->
+      <div id="track">
+        <button class="cart">Cart</button>
+        <p>----</p>
+        <button class="address">Address</button>
+        <p>----</p>
+        <button class="payment">Payment</button>
+      </div>
+      <button id="back">Back</button>
     </div>
 
     <div id="main-container">
-        <div class="container1">
-
-            <div class="adderssCont">
-                <div id="delivery">
-                    <h2>Delivery Address</h2>
-                    <h3 id="change">Change</h3>
-                </div>
-                <span id="deliverAdd"></span>
-            </div>
-
-            <form>
-                <div id="div1">
-                    <h2>Enter Your Card Details</h2>
-                    <div>
-                        <p>Card Holder Name*</p>
-                        <input id="name" type="text" placeholder="Enter Full name">
-                    </div>
-                </div>
-        
-                <div id="div2">
-                    <p>Card Number*</p>
-                    <input id="cardNumber" type="number" placeholder="Enter Card Number">
-                </div>
-        
-                <div id="div3">
-                    <div>
-                        <p>Issue date</p>
-                        <input id="issue" type="date" placeholder="Enter Issue Date">
-                    </div>
-                    <div>
-                        <p>Expiry Date*</p>
-                        <input id="expiry" type="date" placeholder="Enter Expiry Date">
-                    </div>
-                </div>
-    
-                <input id="pay" type="submit" value="PAY">
-            </form>
+      <div class="container1">
+        <div class="adderssCont">
+          <div id="delivery">
+            <h2>Delivery Address</h2>
+            <h3 id="change">Change</h3>
+          </div>
+          <span id="deliverAdd"></span>
         </div>
-        <div class="container2">
-            
-            <div id="innerCont2">
-                <div>
-                    <h2>Order Summary : <span id="count"> </span> items</h2>
-                </div>
 
-
-                <div id="Div1">
-                    <div>Total MRP</div>
-                    <div><span id="MRP"></span></div>
-                </div>
-
-                <div id="Div2">
-                    <div>Total Discount</div>
-                    <div><span id="totalDiscount"></span></div>
-                </div>
-
-                <div id="Div3">
-                    <div>Shipping Charges</div>
-                    <div id="green">FREE</div>
-                </div>
-
-                <div id="Div4">
-                    <div>Payable Amount</div>
-                    <div id="payableAmount"></div>
-                </div>
+        <form>
+          <div id="div1">
+            <h2>Enter Your Card Details</h2>
+            <div>
+              <p>Card Holder Name*</p>
+              <input id="name" type="text" placeholder="Enter Full name" />
             </div>
-        </div>
-</div>
+          </div>
 
-</body>
-<script src="./jsFile/payment.js"></script>
+          <div id="div2">
+            <p>Card Number*</p>
+            <input
+              id="cardNumber"
+              type="number"
+              placeholder="Enter Card Number"
+            />
+          </div>
+
+          <div id="div3">
+            <div>
+              <p>Issue date</p>
+              <input id="issue" type="date" placeholder="Enter Issue Date" />
+            </div>
+            <div>
+              <p>Expiry Date*</p>
+              <input id="expiry" type="date" placeholder="Enter Expiry Date" />
+            </div>
+          </div>
+
+          <input id="pay" type="submit" value="PAY" />
+        </form>
+      </div>
+      <div class="container2">
+        <div id="innerCont2">
+          <div>
+            <h2>Order Summary : <span id="count"> </span> items</h2>
+          </div>
+
+          <div id="Div1">
+            <div>Total MRP</div>
+            <div><span id="MRP"></span></div>
+          </div>
+
+          <div id="Div2">
+            <div>Total Discount</div>
+            <div><span id="totalDiscount"></span></div>
+          </div>
+
+          <div id="Div3">
+            <div>Shipping Charges</div>
+            <div id="green">FREE</div>
+          </div>
+
+          <div id="Div4">
+            <div>Payable Amount</div>
+            <div id="payableAmount"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./jsFile/payment.js"></script>
 </html>

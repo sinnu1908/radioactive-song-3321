@@ -1,0 +1,140 @@
+/* ==================== ROOT VARIBLES */
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --color-navbar: #0f1111;
+  --color-orange: #f9af23;
+  --color-orange-1: #f58013;
+
+  --color-logo: #10a310;
+  --color-info-light: #7d8da1;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.5rem;
+
+  --padding-1: 0.6rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-family: Verdana;
+}
+#nav {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 30px;
+  background-color: var(--color-navbar);
+  /* padding-left: 7%; */
+  padding: 0 25px 0 25px;
+}
+#logo {
+  /* width: 20%; */
+}
+
+#logo > a {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+#logo > a > img {
+  width: 40%;
+}
+
+#logo > a > h1 {
+  color: var(--color-orange);
+  font-family: Impact;
+}
+
+#logo > a > h1 > span {
+  color: var(--color-white);
+  font-family: Impact;
+}
+#track {
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+#track > button {
+  margin-right: 10px;
+  height: 30px;
+  border-radius: 5px;
+}
+#track > p {
+  margin-right: 10px;
+}
+#nav > img {
+  width: 120px;
+  height: 120px;
+  border: 1px solid black;
+  border: none;
+}
+.container2 {
+  width: 34%;
+  border-radius: 20px;
+  margin: auto;
+}
+#innerCont2 {
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+  /* margin-left: 5%; */
+  justify-content: space-between;
+  padding: 20px 20px;
+  border: 3px solid black;
+}
+#innerCont2 > div {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#innerCont2 {
+  /* border: 1px solid red; */
+  background-color: white;
+  border-radius: 20px;
+}
+#innerCont2 > div {
+  margin-bottom: 20px;
+}
+#Div1 {
+  display: flex;
+  justify-content: space-between;
+}
+#Div2 {
+  display: flex;
+  justify-content: space-between;
+}
+#Div3 {
+  display: flex;
+  justify-content: space-between;
+}
+#back {
+  margin-right: 10%;
+  background-color: #f58013;
+  border-radius: 3px;
+  font-size: 18px;
+}
+#invoice {
+  text-align: center;
+}
+#image {
+  cursor: pointer;
+}
+#order {
+  color: green;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .container2 {
+    width: 400px;
+    margin-bottom: 50px;
+  }
+}
