@@ -3,13 +3,12 @@
   --color-black: #000000;
   --color-white: #ffffff;
 
-  --color-primary: #2e3192;
   --color-orange: #f9af23;
   --color-orange-1: #f58013;
-  --color-danger: #ff0000;
 
   --color-price: #008000;
   --color-info-light: #7d8da1;
+  --color-danger: #ff0000;
 
   --card-border-radius: 2rem;
   --border-radius-1: 0.4rem;
@@ -35,6 +34,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+  position: fixed;
 }
 #loginCont {
   width: 60%;
@@ -44,19 +45,38 @@
   display: flex;
 }
 /* =========================== firstLoginDiv */
-
 #firstLoginDiv {
   width: 50%;
   min-height: 100%;
   background-color: var(--color-white);
+  border-radius: 10px;
+}
+#image {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  background: var(--color-orange);
   border-radius: 10px 0 0 10px;
+}
+#image > img {
+  width: 100%;
+}
+
+/* =========================== secondLoginDiv */
+#secondLoginDiv {
+  width: 50%;
+  min-height: 100%;
+  background-color: var(--color-white);
+  border-radius: 0 10px 10px 0;
   border: 0;
   padding: 50px;
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   display: block;
 }
-#firstLoginDiv > div:nth-child(1) {
+#secondLoginDiv > div:nth-child(1) {
   width: 100%;
   min-height: 100%;
 }
@@ -70,7 +90,22 @@ a {
 img {
   width: 15%;
 }
-#firstLoginDiv > div:nth-child(1) > form {
+/* =========================== for give warning of Incorrect Credentials */
+#message {
+  display: none;
+  padding: 10px;
+  /* align-items: center;
+  justify-content: space-around; */
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px, rgba(0, 0, 0, 0.3) 0px 1px 2px;
+  border-radius: 5px;
+  background-color: var(--color-danger);
+  color: var(--color-white);
+}
+#message > p {
+  color: var(--color-white);
+}
+#secondLoginDiv > div:nth-child(1) > form {
   width: 100%;
   min-height: 550px;
   display: flex;
@@ -78,22 +113,7 @@ img {
   justify-content: space-evenly;
   text-align: center;
 }
-
-/* =========================== for give warning of Incorrect Credentials */
-#danger {
-  display: block;
-  padding: 10px;
-  align-items: center;
-  justify-content: space-around;
-  box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px, rgba(0, 0, 0, 0.3) 0px 1px 2px;
-  border-radius: 5px;
-  background: var(--color-danger);
-  color: var(--color-white);
-}
-#danger > p {
-  color: var(--color-white);
-}
-#firstLoginDiv > div:nth-child(1) > form > input {
+#secondLoginDiv > div:nth-child(1) > form > input {
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px, rgba(0, 0, 0, 0.3) 0px 1px 2px;
   border-radius: 5px;
@@ -103,7 +123,7 @@ img {
 ::-webkit-input-placeholder {
   color: var(--color-orange);
 }
-#firstLoginDiv > div:nth-child(1) > form > a > button {
+#secondLoginDiv > div:nth-child(1) > form > input:nth-child(6) {
   width: 100%;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px, rgba(0, 0, 0, 0.3) 0px 1px 2px;
@@ -113,35 +133,22 @@ img {
   background-color: var(--color-orange);
   color: var(--color-white);
 }
-#firstLoginDiv > div:nth-child(1) > form > a > div {
+#secondLoginDiv > div:nth-child(1) > form > p > a {
+  font-size: 1rem;
+}
+#secondLoginDiv > div:nth-child(1) > form > a > div {
   display: flex;
   padding: 10px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px, rgba(0, 0, 0, 0.3) 0px 1px 2px;
   border-radius: 5px;
 }
-
-/* =========================== secondLoginDiv */
-
-#secondLoginDiv {
-  width: 50%;
-  min-height: 100%;
-  background-color: var(--color-white);
-  border-radius: 10px;
-}
-#image {
-  width: 100%;
-  height: 100%;
-  padding: 50px;
-  display: flex;
-  background: var(--color-orange);
-  border-radius: 0 10px 10px 0;
-}
-#image > img {
-  width: 100%;
-}
-
+/* #message{
+  color:#008000;
+  font-weight: bold;
+  margin-bottom: 15px;
+} */
 /* ====================== media tap query */
 
 @media screen and (min-width: 451px) and (max-width: 800px) {
@@ -152,14 +159,14 @@ img {
     width: 50%;
   }
   #firstLoginDiv {
+    display: none;
+  }
+  #secondLoginDiv {
     width: 90%;
     display: block;
     margin: auto;
     padding: 50px;
     box-shadow: none;
-  }
-  #secondLoginDiv {
-    display: none;
   }
 }
 /* ====================== media mobile query */
@@ -172,13 +179,13 @@ img {
     width: 90%;
   }
   #firstLoginDiv {
+    display: none;
+  }
+  #secondLoginDiv {
     width: 90%;
     display: block;
     margin: auto;
     padding: 50px;
     box-shadow: none;
-  }
-  #secondLoginDiv {
-    display: none;
   }
 }

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>apnaMART shopping - Sign Up</title>
-    <link rel="shortcut icon" type="x-icon" href="./imageFile/xxx.png"/>
-    <link rel="stylesheet" href="signUp.css" />
+    <link rel="shortcut icon" type="x-icon" href="./imageFile/xxx.png" />
+    <link rel="stylesheet" href="./cssFile/signUp.css" />
   </head>
   <body>
     <div id="loginBody">
@@ -14,25 +14,27 @@
         <!-- =========================== firstLoginDiv -->
         <div id="firstLoginDiv">
           <div id="image">
-            <img src="./imageFile/signup.png" alt="image not found"/>
+            <img src="./imageFile/signup.png" alt="image not found" />
           </div>
         </div>
         <!-- =========================== secondLoginDiv -->
         <!-- =========================== SignUp -->
         <div id="secondLoginDiv">
           <div>
-           <span id="message"></span>
-
+            <!-- <span id="message"></span> -->
+            <div id="message">
+              <p>Incorrect Credentials</p>
+            </div>
             <form id="userRegister">
-              <h1>Sign up</h1>
+              <h1>Sign Up</h1>
               <input type="text" placeholder="Name" id="name" />
               <input type="number" placeholder="Phone Number" id="number" />
               <input type="email" placeholder="Email" id="email" />
               <input type="password" placeholder="Password" id="password" />
-             <input type="submit" id="submit" value="Sign Up"/>
-            
+              <input type="submit" id="submit" value="Sign Up" />
 
-              <p>Already have account?<a href="signIn.html" id="login">
+              <p>
+                Already have account?<a href="signIn.html" id="login">
                   Signin</a
                 >
               </p>
@@ -55,5 +57,5 @@
       </div>
     </div>
   </body>
-  <script src="signUp.js"></script>
+  <script src="./jsFile/signUp.js"></script>
 </html>

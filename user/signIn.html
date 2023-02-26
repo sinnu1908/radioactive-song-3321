@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>apnaMART shopping - Sign In</title>
-    <link rel="shortcut icon" type="x-icon" href="./imageFile/xxx.png"/>
-    <link rel="stylesheet" href="signIn.css" />
+    <link rel="shortcut icon" type="x-icon" href="./imageFile/xxx.png" />
+    <link rel="stylesheet" href="./cssFile/signIn.css" />
   </head>
   <body>
     <div id="loginBody">
@@ -15,11 +15,11 @@
         <!-- =========================== SignIn -->
         <div id="firstLoginDiv">
           <div>
+            <div id="message">
+              <p>Incorrect Credentials</p>
+            </div>
             <form action="" id="loginForm">
-              <h1>Sign in</h1>
-              <div id="danger">
-                <p></p>
-              </div>
+              <h1>Sign In</h1>
               <input
                 type="text"
                 placeholder="Email or Phone Number"
@@ -27,9 +27,9 @@
               />
               <input type="password" placeholder="Password" id="password" />
               <a href="">Forgot password?</a>
-              <input type="submit" id="submit" value="Sign in">
+              <input type="submit" id="submit" value="Sign In" />
               <p>
-                Don't have account?<a href="signUp.html" id="signin"> Signup</a>
+                Don't have account? <a href="signUp.html" id="signin">Signup</a>
               </p>
               <a href=""
                 ><div id="facebook">
@@ -56,5 +56,5 @@
       </div>
     </div>
   </body>
-  <script src="signIn.js"></script>
+  <script src="./jsFile/signIn.js"></script>
 </html>
