@@ -93,6 +93,13 @@
   background-color: white;
   border-radius: 20px;
   border: 3px solid black;
+  padding-top: 20px;
+}
+p{
+  margin-bottom: 10px;
+}
+#landmark{
+  margin-bottom: 10px;
 }
 #div1 {
   display: flex;
@@ -103,18 +110,20 @@
 }
 #div1 > div > input {
   height: 40px;
-  font-size: 20px;
+  font-size: 15px;
   width: 100%;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 #div2 {
   margin-left: 5%;
 }
 #div2 > input {
   height: 40px;
-  font-size: 20px;
+  font-size: 15px;
   width: 80%;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 #div3 {
   display: flex;
@@ -125,7 +134,7 @@
 }
 #div3 > div > input {
   height: 40px;
-  font-size: 20px;
+  font-size: 15px;
   width: 100%;
   border-radius: 5px;
 }
@@ -202,10 +211,20 @@
   margin-right: 10%;
   background-color: #f58013;
   border-radius: 3px;
-  font-size: 18px;
+  font-size: 15px;
+  padding: 5px 5px;
 }
 #image {
   cursor: pointer;
+}
+.cart{
+  padding: 5px 5px;
+}
+.address{
+  padding: 5px 5px;
+}
+.payment{
+  padding: 5px 5px;
 }
 
 @media only screen and (max-width: 600px) {

@@ -82,6 +82,9 @@
   border-radius: 20px;
   margin: auto;
 }
+#shipping > p{
+  margin-bottom: 10px;
+}
 #innerCont2 {
   width: 100%;
   background-color: white;
@@ -119,9 +122,12 @@
   margin-right: 10%;
   background-color: #f58013;
   border-radius: 3px;
-  font-size: 18px;
+  font-size: 15px;
+  padding: 5px 5px;
 }
 #invoice {
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
 }
 #image {
@@ -131,7 +137,15 @@
   color: green;
   text-align: center;
 }
-
+.cart{
+  padding: 5px 5px;
+}
+.address{
+  padding: 5px 5px;
+}
+.payment{
+  padding: 5px 5px;
+}
 @media only screen and (max-width: 600px) {
   .container2 {
     width: 400px;
