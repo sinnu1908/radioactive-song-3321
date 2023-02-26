@@ -1,3 +1,4 @@
+
 /* ==================== ROOT VARIBLES */
 :root {
     --color-black: #000000;
@@ -142,11 +143,6 @@
   
   }
   
-  #functionality{
-  
-  width:18%;
-  }
-  
   /* container css */
   #container{
     width:80%;
@@ -239,79 +235,39 @@
     color:#121212;
   }
   
-  .sorting{
-    font-size: 16px;
-    color:#121212;
-  }
-  .sorting>h2,.filter>h2{
+  #main .sorting{
+    position:fixed;
     font-size: 16px;
   }
-  .sorting>input[type=radio]{
-  background-color: red;
-    height:18px;
-    width:16px;
+  
+  #main .sorting>h3{
+  margin-bottom: 16px;
+  
+  }
+  #main .sorting>input{
+    margin-bottom: 12px;
     margin-right:5px;
     
   }
-  
-  
-  
-  
-  /* #mainCont {
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-  }
-  
-  #mainCont > div  {
-    width: 100%; */
-  
-    /* height: 100%;
-    border-radius: var(--border-radius-3);
+  #main .sorting:hover, #main .sorting>input:hover{
     cursor: pointer;
-    border: 1px solid red
+  }
+  #main .filter{
+    position:fixed;
+    top:170px;
+    font-size: 16px;
   }
   
-  #mainCont > div > div {
-    width: 100%;
-    height: 50%;
+  #main .filter input{
+    margin-right:5px;
+    margin-bottom: 12px;
   }
   
-  #mainCont > div  > div > img {
-    width: 100%;
-    height: 100%;
+  #main .filter h5{
+    margin:16px 0px 14px 0px;
   }
   
-  #mainCont > div  > button {
-    width: 100%;
-    padding: 10px;
-    position: relative;
-    opacity: 1;
-    cursor: pointer;
-    border: 0;
-    background: var(--color-orange-1);
-    color: var(--color-white);
-    font-size: ;
-  }
   
-  #mainCont > div  > p:nth-child(3) {
-    margin-top: 10px;
-  }
   
-  #mainCont > div  > p:nth-child(4) {
-    margin-top: 10px;
-    color: var(--color-info-light);
-    font-size: 0.8rem;
-  }
   
-  #mainCont > div  > h2:nth-child(5) {
-    margin-top: 10px;
-    color: var(--color-orange-1);
-  }
-  
-  #mainCont > div  > p:nth-child(6) {
-    margin-top: 10px;
-    color: var(--color-price);
-  } */
   

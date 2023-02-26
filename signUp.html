@@ -21,13 +21,17 @@
         <!-- =========================== SignUp -->
         <div id="secondLoginDiv">
           <div>
-            <form action="">
+           <span id="message"></span>
+
+            <form id="userRegister">
               <h1>Sign up</h1>
               <input type="text" placeholder="Name" id="name" />
               <input type="number" placeholder="Phone Number" id="number" />
               <input type="email" placeholder="Email" id="email" />
               <input type="password" placeholder="Password" id="password" />
-              <a href="./index.html"><button>Sign up</button></a>
+             <input type="submit" id="submit" value="Sign Up"/>
+            
+
               <p>Already have account?<a href="signIn.html" id="login">
                   Signin</a
                 >
@@ -51,5 +55,5 @@
       </div>
     </div>
   </body>
-  <script src="./jsFile/signUp.js"></script>
+  <script src="signUp.js"></script>
 </html>
