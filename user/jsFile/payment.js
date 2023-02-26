@@ -2,11 +2,11 @@ let detail = JSON.parse(localStorage.getItem("charges"))||[];
 
 let mrp = document.getElementById("MRP");
 
-let goHome = document.getElementById("image")
+// let goHome = document.getElementById("image")
 
-goHome.addEventListener("click",()=>{
-window.location.href = "./home.html"
-})
+// goHome.addEventListener("click",()=>{
+// window.location.href = "./home.html"
+// })
 
 let totalDiscount = document.getElementById("totalDiscount");
 
