@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment</title>
+    <title>Address</title>
+    <link rel="shortcut icon" type="x-icon" href="./imageFile/xxx.png" />
     <style>
-         body{
+        body{
             background-color: #EEEEEE;
         }
         #nav{
@@ -18,7 +19,12 @@
             background-color: white;
             padding-left: 7%;
         }
-        #track{
+        #nav > img{
+            width: 120px;
+            height: 120px;
+            border: 1px solid black;
+            border: none;
+        }#track{
             display: flex;
             margin: auto;
             align-items: center;
@@ -31,92 +37,80 @@
         #track > p{
             margin-right: 10px;
         }
-        #nav > img{
-            width: 120px;
-            height: 120px;
-            border: 1px solid black;
-            border: none;
+        #footer{
+            margin-top: 10px;
+            background-color: white;
         }
         #main-container{
-            width: 60%;
+            width: 80%;
             display: flex;
+            /* border: 1px solid red; */
             margin: auto;
         }
         .container1{
             width: 60%;
+           /* border: 1px solid black;  */
+           background-color: white;
+           border-radius: 20px;
+           border: 3px solid black;
         }
-        .adderssCont{
-            margin-bottom: 20px;
-            background-color: white;
-            border-radius: 10px;
-            padding-bottom: 10px;
-            padding-left: 10px;
-            border: 3px solid black;
-        }
-        #delivery{
+        #div1 {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
         }
-        form{
-            background-color: white;
-            border-radius: 20px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            border: 3px solid black;
+        #div1 > div{
+            width: 40%;
         }
-        #div1{
-            margin-left: 5%;
-        }
-        #name{
-            width: 80%;
+        #div1 > div > input{
             height: 40px;
-            font-size: 17px;
+            font-size: 20px;
+            width: 100%;
             border-radius: 5px;
         }
         #div2{
             margin-left: 5%;
         }
-        #cardNumber{
-            width: 80%;
+        #div2 > input{
             height: 40px;
-            font-size: 17px;
+            font-size: 20px;
+            width: 80%;
             border-radius: 5px;
         }
-        #div3{
+        #div3 {
             display: flex;
+            justify-content: space-around;
+        }
+        #div3 > div{
+            width: 40%;
+        }
+        #div3 > div > input{
+            height: 40px;
+            font-size: 20px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        #div4{
             margin-left: 5%;
         }
-        #div3{
-            margin-bottom: 20px;
-        }
-        #issue{
-            width: 80%;
+        #div4 > button{
             height: 30px;
-            font-size: 17px;
+            font-size: 20px;
             border-radius: 5px;
+            border: none;
+            background-color: #E0E0E0;
             margin-bottom: 20px;
         }
-        #expiry{
-            width: 80%;
-            height: 30px;
-            font-size: 17px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        #pay{
+        #submit{
             width: 60%;
             height: 50px;
-            margin-left: 20%;
             font-size: 20px;
-            margin-bottom: 20px;
             border-radius: 10px;
+            border: none;
             background-color: #f58013;
+            display: block;
+            margin: auto;
+            margin-bottom: 20px;
         }
-        #pay:hover{
-            background-color: #00BCD4;
-        }
-
-
         .container2{
             width: 35%;
             /* height: 800px; */
@@ -163,14 +157,6 @@
             justify-content: space-between;
             color: #f58013;
         }
-        #footer{
-            background-color: white;
-        }
-        #change{
-            color: #f58013;
-            cursor: pointer;
-            margin-right: 10px;
-        }
         #back{
             margin-right: 10%;
             background-color: #f58013;
@@ -180,27 +166,28 @@
         #image{
             cursor: pointer
         }
+
         @media only screen and (max-width: 600px){
 
             #main-container{
                 display: flex;
                 flex-direction: column;
-                /* width: 600px;
-                margin: auto; */
+                margin: auto;
             }
             .container1{
                 width: 400px;
+                margin: auto;
             }
             .container2{
-                width: 330px;
+                width: 300px;
+                margin: auto;
+                margin-right: 100px;
                 margin-top: 20px;
-                margin-bottom: 20px;
             }
         }
     </style>
 </head>
 <body>
-
     <div id="nav">
         <img id="image" src="./logo.png" alt="">
         <div id="track">
@@ -216,41 +203,43 @@
 
     <div id="main-container">
         <div class="container1">
-
-            <div class="adderssCont">
-                <div id="delivery">
-                    <h2>Delivery Address</h2>
-                    <h3 id="change">Change</h3>
-                </div>
-                <span id="deliverAdd"></span>
-            </div>
-
+            
             <form>
                 <div id="div1">
-                    <h2>Enter Your Card Details</h2>
                     <div>
-                        <p>Card Holder Name*</p>
+                        <p>Name*</p>
                         <input id="name" type="text" placeholder="Enter Full name">
+                    </div>
+                    <div>
+                        <p>Mobile No.*</p>
+                        <input id="mobNo" type="number" placeholder="Enter 10 digit no.">
                     </div>
                 </div>
         
                 <div id="div2">
-                    <p>Card Number*</p>
-                    <input id="cardNumber" type="number" placeholder="Enter Card Number">
+                    <p>Address(Area & Street)*</p>
+                    <input id="address" type="text" placeholder="Type Your Address">
                 </div>
         
                 <div id="div3">
                     <div>
-                        <p>Issue date</p>
-                        <input id="issue" type="date" placeholder="Enter Issue Date">
+                        <p>Landmark</p>
+                        <input id="landmark" type="text" placeholder="Type Your Address">
                     </div>
                     <div>
-                        <p>Expiry Date*</p>
-                        <input id="expiry" type="date" placeholder="Enter Expiry Date">
+                        <p>Pincode*</p>
+                        <input id="pincode" type="number" placeholder="Type Your Address">
                     </div>
                 </div>
     
-                <input id="pay" type="submit" value="PAY">
+                <div id="div4">
+                    <p>Address Type</p>
+                    <button>Home</button>
+                    <button>Office</button>
+                    <button>Others</button>
+                </div>
+    
+                <input id="submit" type="submit" value="Save & Deliver">
             </form>
         </div>
         <div class="container2">
@@ -280,10 +269,11 @@
                     <div>Payable Amount</div>
                     <div id="payableAmount"></div>
                 </div>
+
+
             </div>
         </div>
 </div>
-
 </body>
-<script src="payment.js"></script>
+<script src="./jsFile/address.js"></script>
 </html>

@@ -531,6 +531,10 @@ h3 {
   .product > a {
     width: 67%;
   }
+  .advanceProductDesign {
+    display: flex;
+    flex-direction: column;
+  }
   .firstDiv {
     width: 100%;
   }
@@ -541,10 +545,12 @@ h3 {
     width: 100%;
   } */
   .secondDiv {
-    display: none;
+    /* display: none; */
+    width: 100%;
   }
   .thirdDiv {
     display: none;
+    /* width: 100%; */
   }
   .imageSilde {
     grid-template-columns: repeat(3, 1fr);
