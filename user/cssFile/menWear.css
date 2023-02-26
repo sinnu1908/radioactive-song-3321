@@ -39,6 +39,7 @@ body::-webkit-scrollbar {
   position: fixed;
   background: var(--color-navbar);
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  z-index: 1;
 }
 
 #logo {
@@ -141,7 +142,7 @@ height:300px;
   background-color: #FF7035;
   color:#FFFFFF;
   position:absolute;
-  left:33%;
+  left:28%;
   bottom:0;
   opacity:0;
   transition:1s;
@@ -238,6 +239,101 @@ margin-bottom: 16px;
 #main .filter h5{
   margin:8px 0px 12px 0px;
 }
+
+/* footer */
+#footer {
+  width: 80%;
+  margin-left:20%;
+  padding: 25px 25px 25px 25px;
+  margin-top: 20px;
+  background: var(--color-navbar);
+  color: var(--color-white);
+}
+#first > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+  padding: 10px 0 10px 0;
+}
+#first > div > img {
+  width: 5%;
+  cursor: pointer;
+}
+/* ====================== second part */
+#second {
+  display: flex;
+}
+#second > div:nth-child(1) {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#second > div:nth-child(1) > div {
+  width: 50%;
+}
+#second > div:nth-child(1) > div > p {
+  margin-top: 10px;
+  cursor: pointer;
+}
+#second > div:nth-child(1) > div > p:hover {
+  color: var(--color-orange);
+}
+#second > div:nth-child(2) {
+  width: 100%;
+}
+#second > div:nth-child(2) > h2,
+h3 {
+  margin-bottom: 20px;
+}
+#second > div:nth-child(2) > div {
+  display: flex;
+}
+#second > div:nth-child(2) > div > img {
+  width: 30%;
+  border-radius: var(--border-radius-1);
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* ====================== third part */
+
+#third {
+  margin-top: 20px;
+}
+#third > p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* media queries mediun size*/
+
+@media screen and (min-width: 451px) and (max-width: 800px) {
+ 
+  #logo > a > img {
+    width: 200%;
+  }
+  /* #search {
+    display: none;
+  } */
+  #search>input{
+    width:200px;
+    font-size: 14px;
+  }
+  #search>button{
+    font-size:16px;
+    padding:8px 10px;
+  }
+#container{
+  width:70%;
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:40px;
+  font-weight: 500;
+}
+}
+
+/* media queries small size */
 
 
 
