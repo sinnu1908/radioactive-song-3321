@@ -1,6 +1,6 @@
 let homeDecorProducts=document.getElementById("form");
 
-let url="http://localhost:3000/homeDecor";
+let url="https://drab-rose-sturgeon.cyclic.app/homeDecor";
 
 let btn=document.getElementById("button");
 

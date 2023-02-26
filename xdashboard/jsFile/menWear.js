@@ -1,7 +1,7 @@
 
 let mensForm=document.getElementById("form");
 
-let url="http://localhost:3000/mensWear";
+let url="https://drab-rose-sturgeon.cyclic.app/mensWear";
 
 let btn=document.getElementById("button");
 
