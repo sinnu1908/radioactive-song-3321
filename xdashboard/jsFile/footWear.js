@@ -1,6 +1,6 @@
 let footWearProducts=document.getElementById("form");
 
-let url=`http://localhost:3000/footwear`;
+let url=`https://drab-rose-sturgeon.cyclic.app/footwear`;
 
 let btn=document.getElementById("button");
 
