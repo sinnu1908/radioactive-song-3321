@@ -95,7 +95,12 @@ function productCard(data){
         
         let name=document.createElement("h2");
             name.setAttribute("class","name");
-            name.innerText=element.name;
+            if(element.name.length>45){
+                name.innerText=`${element.name.substring(0,45)}...`;
+            }else{
+                name.innerText=element.name;
+            }
+           
     
         let brandName=document.createElement("p");
             brandName.setAttribute("class","brandName");
@@ -367,33 +372,19 @@ discountThirtyOnetoFifty.addEventListener("click",function(){
         }
     })
 
+// SEARCH FUNCTIONALITY
 
+let searchInpt=document.getElementById("searchInpt");
+let searchBtn=document.getElementById("serachBtn");
 
-
-//     maindata.forEach((element)=>{
-
-//     if(element.brandName==this.value){
-//     filterArray.push(element)
-//     }
-
-//     })
-
-//     }
-//     else
-//     {
-//     filterArray=filterArray.filter((elem)=>{
-
-//     if(elem.brandName!==this.value){
-//     return true;
-//     }
-
-//     }) 
-    
-//     }
-//     if(filterArray.length==0){
-//             productCard(maindata);
-//     }else{
-//         productCard(filterArray)
-//     }
-
+// searchBtn.addEventListener("click",()=>{
+//     console.log(searchInpt.value)
 // })
+
+searchInpt.addEventListener("input",()=>{
+    
+let newData=maindata.filter((elem)=>{
+    return elem.name.toLowerCase().includes(searchInpt.value.toLowerCase());
+})
+productCard(newData)
+})

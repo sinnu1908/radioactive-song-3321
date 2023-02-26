@@ -5,17 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="shortcut icon" type="x-icon" href="./imageFile/xxx.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
   </head>
   <link rel="stylesheet" href="./cssFile/menWear.css" />
   <body>
+
     <header>
       <div id="navbar">
         <div id="logo">
@@ -25,8 +22,8 @@
           </a>
         </div>
         <div id="search">
-          <input type="text" placeholder="What are you looking for?" />
-          <button>Search</button>
+          <input type="text" id="searchInpt" placeholder="What are you looking for?" />
+          <button id="serachBtn">Search</button>
         </div>
         <div id="side3">
           <a href="./signIn.html">
@@ -37,221 +34,143 @@
           </a>
         </div>
       </div>
-      <!-- navbar icon -->
-      <!-- <div id="icons">
-<div>
-          <div>
-          <a href="">
-            <div>
-            <img
-                src="https://shopping.imimg.com/style/ladies-wear.png"
-                alt="ladiesWearLogo"
-              />
-            </div>
-            <p>Ladies<br />Wear</p>
-          </a>
-        </div>
-        <div>
-          <a href="Fmen.html">
-            <div>
-              <img
-                src="https://shopping.imimg.com/style/men-wear.png"
-                alt="image not found"
-              />
-            </div>
-            <p>Men<br />Wear</p>
-          </a>
-        </div>
-        <div>
-          <a href="">
-            <div>
-              <img
-                src="https://shopping.imimg.com/style/footwear.png"
-                alt="image not found"
-              />
-            </div>
-            <p>Foot<br />Wear</p>
-          </a>
-        </div>
-        <div>
-          <a href="FbeautyProducts.html">
-            <div>
-              <img
-                src="https://shopping.imimg.com/style/beauty-products.png"
-                alt="image not found"
-              />
-            </div>
-            <p>Beauty<br />Products</p>
-          </a>
-        </div>
-        <div>
-          <a href="">
-            <div>
-              <img
-                src="https://shopping.imimg.com/style/artificial-jewellery.png"
-                alt="image not found"
-              />
-            </div>
-            <p>Artificial<br />Jewellery</p>
-          </a>
-        </div>
-</div>
-      <div>
-        <div>
-          <a href="FhomeDecor.html">
-            <div>
-              <img
-                src="https://shopping.imimg.com/style/home-decor.png"
-                alt="image not found"
-              />
-            </div>
-            <p>Home<br />Decor</p>
-          </a>
-        </div>
-        <div>
-
-                    <a href="">
-            <div>
-              <img
-                src="https://shopping.imimg.com/style/mobile-accessories.png"
-                alt="image not found"
-              />
-            </div>
-            <p>Electronics</p>
-          </a>
-        </div>
-        <div>
-          <a href="">
-            <div>
-              <img
-                src="https://shopping.imimg.com/style/fertilizer.png"
-                alt="image not found"
-              />
-            </div>
-            <p>Fertilizer</p>
-          </a>
-        </div>
-        <div>
-                    <a href="">
-            <div>
-              <img
-                src="https://shopping.imimg.com/style/light.png"
-                alt="image not found"
-              />
-            </div>
-            <p>Light</p>
-          </a>
-        </div>
-        <div>
-          <a href="">
-            <div>
-              <img
-              src="https://shopping.imimg.com/style/industrial-chemicals.png"
-              alt="image not found"
-              />
-            </div>
-            <p>Industrial<br />Chemicals</p>
-          </a>
-
-        </div>
-      </div>  
-      </div> -->
-    </header>
-    <!-- navbar -->
-    <!-- <header>
-        <div id="navbar">
-            <div id="logo">
-                <a href="homepage.html">
-                    <img src="logo.png" alt="image not found"/>
-                <h1>APNA<span>MART</span></h1>
-                </a>
-            </div>
-            <div id="search">
-                <input type="text" placeholder="What are you looking for?"/>
-                <button>Search</button>
-            </div>
-            <div id="bulkRequirement" >
-                <p>Bulk Requirement</p>
-            </div>
-        </div>
-    </header> -->
-
-    <div id="main">
-      <div class="functionality">
-        <!-- sort functionality -->
+     
+    
+<div id="main">
+     
+ <div class="functionality">
+      <!-- sort functionality -->
         <div class="sorting">
           <h3>Sort By</h3>
-          <input
-            id="relevance"
-            type="radio"
-            name="sort"
-            value="relevance"
-          />Relevance
-          <br />
-          <input id="LH" type="radio" name="sort" value="Lowest_Price_First" />
-          Lowest Price First
-          <br />
-          <input id="HL" type="radio" name="sort" value="Highest Price First" />
-          Highest Price First
-          <br />
-          <input
-            id="shipping"
-            type="radio"
-            name="sort"
-            value="Fastest_Shipping"
-          />
-          Fastest Shipping
+          <input id="relevance" type="radio" name="sort" value="relevance"/>Relevance
+          <br>
+          <input id="LH" type="radio" name="sort" value="Lowest_Price_First"/> Lowest Price First
+          <br>
+          <input id="HL" type="radio" name="sort" value="Highest Price First"/> Highest Price First
+          <br>
+          <input id="shipping" type="radio" name="sort" value="Fastest_Shipping"/> Fastest Shipping
+       </div>
+  
+
+      <!-- filter functionality -->
+  <div class="filter">
+      <h3>Filter By </h3>
+
+    <div class="brandName">
+      <h5>BrandName</h5>
+      <input type="checkbox" value="Glidan" class="brandName">
+      <label form="Glidan">Glidan</label>
+      <br>
+      <input type="checkbox" value="Camber" class="brandName">
+      <label form="Camber">Camber</label>
+      <br>
+      <input type="checkbox" value="Uniqlo" class="brandName">
+      <label form="Uniqlo">Uniqlo</label>
+      <br>
+      <input type="checkbox" value="Polo" class="brandName">
+      <label form="Polo">Polo</label>
+      <br>
+      <input type="checkbox" value="R G Designers" class="brandName">
+      <label form="R G Designers">R G Designers</label>
+      <br>
+      <input type="checkbox" value="Prakhar" class="brandName">
+      <label form="Prakhar">Prakhar</label>
+      <br>
+      <input type="checkbox" value="Romano" class="brandName">
+      <label form="Romano">Romano</label>
+      <br>
+  </div>
+
+
+<div class="discount">
+  <h5>Discount</h5>
+  <input type="checkbox" value=""  id="discountlessthanTen">
+  <label form="">Less than 10 %</label>
+  <br>
+  <input type="checkbox" value="" id="discountTentoThirty">
+  <label form="">10 % to 30 %</label>
+  <br>
+  <input type="checkbox" value="" id="discountThirtyOnetoFifty">
+  <label form="">31 % to 50 %</label>
+  <br>
+  <input type="checkbox" value="" id="discountMorethanFifty">
+  <label form="Romano">More than 50 %</label>
+  <br>
+</div>
+</div> 
+
+
+</div>
+    
+  <div id="container"></div>
+
+</div>
+
+  
+    <!-- <footer>
+      <div id="footer">
+         first part
+        <div id="first">
+          <h2>We are here to help you!!!</h2>
+          <div>
+            <img src="./imageFile/instagram.png" alt="image not found" />
+            <img src="./imageFile/facebook.png" alt="image not found" />
+            <img src="./imageFile/linkedin.png" alt="image not found" />
+            <img src="./imageFile/twitter.png" alt="image not found" />
+          </div>
         </div>
-
-        <!-- filter functionality -->
-        <div class="filter">
-          <h3>Filter By</h3>
-
-          <div class="brandName">
-            <h5>BrandName</h5>
-            <input type="checkbox" value="Glidan" class="brandName" />
-            <label form="Glidan">Glidan</label>
-            <br />
-            <input type="checkbox" value="Camber" class="brandName" />
-            <label form="Camber">Camber</label>
-            <br />
-            <input type="checkbox" value="Uniqlo" class="brandName" />
-            <label form="Uniqlo">Uniqlo</label>
-            <br />
-            <input type="checkbox" value="Polo" class="brandName" />
-            <label form="Polo">Polo</label>
-            <br />
-            <input type="checkbox" value="R G Designers" class="brandName" />
-            <label form="R G Designers">R G Designers</label>
-            <br />
-            <input type="checkbox" value="Prakhar" class="brandName" />
-            <label form="Prakhar">Prakhar</label>
-            <br />
-            <input type="checkbox" value="Romano" class="brandName" />
-            <label form="Romano">Romano</label>
-            <br />
+      second part 
+        <div id="second">
+          <div>
+            <div>
+              <p>About Us</p>
+              <p>Join Sales</p>
+              <p>success stories</p>
+              <p>Press Section</p>
+              <p>Advertise with Us</p>
+              <p>Investor Section</p>
+            </div>
+            <div>
+              <p>Help</p>
+              <p>Feedback</p>
+              <p>Complaints</p>
+              <p>Customer Care</p>
+              <p>Jobs & Careers</p>
+              <p>Contact Us</p>
+            </div>
           </div>
-
-          <div class="discount">
-            <h5>Discount</h5>
-            <input type="checkbox" value="" id="discountlessthanTen" />
-            <label form="">Less than 10 %</label>
-            <br />
-            <input type="checkbox" value="" id="discountTentoThirty" />
-            <label form="">10 % to 30 %</label>
-            <br />
-            <input type="checkbox" value="" id="discountThirtyOnetoFifty" />
-            <label form="">31 % to 50 %</label>
-            <br />
-            <input type="checkbox" value="" id="discountMorethanFifty" />
-            <label form="Romano">More than 50 %</label>
-            <br />
+          <div>
+            <h2>DOWNLOAD APNAMART APP</h2>
+            <h3>We have incredible offers, discounts & much more in our app</h3>
+            <div>
+              <img src="./imageFile/google play.png" alt="image not found" />
+              <img src="./imageFile/apple app.png" alt="image not found" />
+            </div>
           </div>
+        </div>
+        third part 
+        <div id="third">
+          <div>
+            <hr />
+          </div>
+          <p>
+            By continuing past this page, you agree to our Terms of Service,
+            Cookie Policy, Privacy Policy and Content Policies. All trademarks
+            are properties of their respective owners. 1996-2023 Copyright ©
+            1996-2023 apnaMART InterMESH Ltd. All rights reserved.
+          </p>
         </div>
       </div>
+    </footer>-->
 
-      <div id="container"></div>
-    </div>
+
+
+
   </body>
   <script src="./jsFile/menWear.js"></script>
 </html>
+
+
+
+  
+
