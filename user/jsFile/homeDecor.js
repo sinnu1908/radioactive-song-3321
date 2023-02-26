@@ -1,4 +1,4 @@
-let MensProductUrl=`http://localhost:3000/homeDecor/`
+let MensProductUrl=`https://drab-rose-sturgeon.cyclic.app/homeDecor/`
 let maindata=[];
 let sortedData=[];
 let container=document.getElementById("container");
