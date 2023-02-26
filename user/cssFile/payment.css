@@ -89,13 +89,15 @@
   margin-bottom: 20px;
   background-color: white;
   border-radius: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   padding-left: 10px;
   border: 3px solid black;
 }
 #delivery {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 form {
   background-color: white;
@@ -107,20 +109,33 @@ form {
 #div1 {
   margin-left: 5%;
 }
+#div1 > h2{
+  /* font-size: 15px; */
+  margin-bottom: 10px;
+}
+#div1 > input{
+  margin-bottom: 10px;
+}
+p{
+  margin-bottom: 10px;
+}
 #name {
   width: 80%;
   height: 40px;
   font-size: 17px;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 #div2 {
   margin-left: 5%;
+  margin-bottom: 10px;
 }
 #cardNumber {
   width: 80%;
   height: 40px;
   font-size: 17px;
   border-radius: 5px;
+  margin-bottom: 10px;
 }
 #div3 {
   display: flex;
@@ -163,7 +178,7 @@ form {
   border-radius: 20px;
 }
 #innerCont2 {
-  width: 100%;
+  width: 120%;
   background-color: white;
   border-radius: 20px;
   margin-left: 5%;
@@ -215,10 +230,20 @@ form {
   margin-right: 10%;
   background-color: #f58013;
   border-radius: 3px;
-  font-size: 18px;
+  font-size: 15px;
+  padding: 5px 5px;
 }
 #image {
   cursor: pointer;
+}
+.cart{
+  padding: 5px 5px;
+}
+.address{
+  padding: 5px 5px;
+}
+.payment{
+  padding: 5px 5px;
 }
 @media only screen and (max-width: 600px) {
   #main-container {
@@ -234,5 +259,14 @@ form {
     width: 330px;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  #innerCont2 {
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 5%;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border: 3px solid black;
   }
 }
