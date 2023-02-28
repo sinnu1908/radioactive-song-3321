@@ -1,106 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Address</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address - apnaMART shopping</title>
     <link rel="shortcut icon" type="x-icon" href="./imageFile/xxx.png" />
-    <link rel="stylesheet" href="./cssFile/address.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./cssFile/address.css" />
+  </head>
+  <body>
     <div id="nav">
-        <!-- <img id="image" src="./logo.png" alt=""> -->
-        <div id="logo">
+      <!-- <img id="image" src="./logo.png" alt=""> -->
+      <div id="logo">
         <a href="./index.html">
           <img src="./imageFile/logo.png" alt="image not found" />
           <h1>APNA<span>MART</span></h1>
         </a>
       </div>
-        <div id="track">
-            
-            <button class="cart">Cart</button>
-            <p>----</p>
-            <button class="address">Address</button>
-            <p>----</p>
-            <button class="payment">Payment</button>
-        </div>
-        <button id="back">Back</button>
+      <div id="track">
+        <button class="cart">Cart</button>
+        <p>----</p>
+        <button class="address">Address</button>
+        <p>----</p>
+        <button class="payment">Payment</button>
+      </div>
+      <button id="back">Back</button>
     </div>
 
     <div id="main-container">
-        <div class="container1">
-            
-            <form>
-                <div id="div1">
-                    <div>
-                        <p>Name*</p>
-                        <input id="name" type="text" placeholder="Enter Full name">
-                    </div>
-                    <div>
-                        <p>Mobile No.*</p>
-                        <input id="mobNo" type="number" placeholder="Enter 10 digit no.">
-                    </div>
-                </div>
-        
-                <div id="div2">
-                    <p>Address(Area & Street)*</p>
-                    <input id="address" type="text" placeholder="Type Your Address">
-                </div>
-        
-                <div id="div3">
-                    <div>
-                        <p>Landmark</p>
-                        <input id="landmark" type="text" placeholder="Type Your Address">
-                    </div>
-                    <div>
-                        <p>Pincode*</p>
-                        <input id="pincode" type="number" placeholder="Type Your Address">
-                    </div>
-                </div>
-    
-                <div id="div4">
-                    <p>Address Type</p>
-                    <button>Home</button>
-                    <button>Office</button>
-                    <button>Others</button>
-                </div>
-    
-                <input id="submit" type="submit" value="Save & Deliver">
-            </form>
-        </div>
-        <div class="container2">
-            
-            <div id="innerCont2">
-                <div>
-                    <h2>Order Summary : <span id="count"> </span> items</h2>
-                </div>
-
-
-                <div id="Div1">
-                    <div>Total MRP</div>
-                    <div><span id="MRP"></span></div>
-                </div>
-
-                <div id="Div2">
-                    <div>Total Discount</div>
-                    <div><span id="totalDiscount"></span></div>
-                </div>
-
-                <div id="Div3">
-                    <div>Shipping Charges</div>
-                    <div id="green">FREE</div>
-                </div>
-
-                <div id="Div4">
-                    <div>Payable Amount</div>
-                    <div id="payableAmount"></div>
-                </div>
-
-
+      <div class="container1">
+        <form>
+          <div id="div1">
+            <div>
+              <p>Name*</p>
+              <input id="name" type="text" placeholder="Enter Full name" />
             </div>
+            <div>
+              <p>Mobile No.*</p>
+              <input
+                id="mobNo"
+                type="number"
+                placeholder="Enter 10 digit no."
+              />
+            </div>
+          </div>
+
+          <div id="div2">
+            <p>Address(Area & Street)*</p>
+            <input id="address" type="text" placeholder="Type Your Address" />
+          </div>
+
+          <div id="div3">
+            <div>
+              <p>Landmark</p>
+              <input
+                id="landmark"
+                type="text"
+                placeholder="Type Your Address"
+              />
+            </div>
+            <div>
+              <p>Pincode*</p>
+              <input
+                id="pincode"
+                type="number"
+                placeholder="Type Your Address"
+              />
+            </div>
+          </div>
+
+          <div id="div4">
+            <p>Address Type</p>
+            <button>Home</button>
+            <button>Office</button>
+            <button>Others</button>
+          </div>
+
+          <input id="submit" type="submit" value="Save & Deliver" />
+        </form>
+      </div>
+      <div class="container2">
+        <div id="innerCont2">
+          <div>
+            <h2>Order Summary : <span id="count"> </span> items</h2>
+          </div>
+
+          <div id="Div1">
+            <div>Total MRP</div>
+            <div><span id="MRP"></span></div>
+          </div>
+
+          <div id="Div2">
+            <div>Total Discount</div>
+            <div><span id="totalDiscount"></span></div>
+          </div>
+
+          <div id="Div3">
+            <div>Shipping Charges</div>
+            <div id="green">FREE</div>
+          </div>
+
+          <div id="Div4">
+            <div>Payable Amount</div>
+            <div id="payableAmount"></div>
+          </div>
         </div>
-</div>
-</body>
-<script src="./jsFile/address.js"></script>
+      </div>
+    </div>
+  </body>
+  <script src="./jsFile/address.js"></script>
 </html>
